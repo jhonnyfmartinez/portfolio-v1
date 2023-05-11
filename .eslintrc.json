@@ -13,6 +13,7 @@
 
     // Variables
     "no-use-before-define": ["error", "nofunc"],
+    "no-undef": "off",
 
     // Stylistic Issues
     "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
