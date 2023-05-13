@@ -1,0 +1,19 @@
+:root {
+  --color-primary: 240 101 67;
+  --color-accent: 240 157 81;
+  --color-text: 199 199 199;
+  --color-paper: 44 46 62;
+  --color-background: 31 32 43;
+  --color-headings: 222 222 222;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: 240 101 67;
+    --color-accent: 240 157 81;
+    --color-text: 199 199 199;
+    --color-paper: 44 46 62;
+    --color-background: 31 32 43;
+    --color-headings: 222 222 222;
+  }
+}

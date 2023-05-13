@@ -1,0 +1,7 @@
+body {
+  @apply font-sans;
+}
+
+pre {
+  @apply font-mono;
+}

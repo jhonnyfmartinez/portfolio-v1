@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  @import 'base/variables.css';
+  @import 'base/colors.css';
+  @import 'base/typography.css';
+}
+
+@layer components {
+}
+
+@tailwind utilities;
+@layer utilities {
+}
