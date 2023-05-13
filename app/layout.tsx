@@ -1,3 +1,4 @@
+import NavBar from './components/NavBar';
 import './styles/index.css';
 import { Arvo, Source_Code_Pro } from 'next/font/google';
 
@@ -12,7 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${arvo.variable} ${sourceCodePro.variable}`}>
-      <body suppressHydrationWarning={true}>{children}</body>
+      <body suppressHydrationWarning={true}>
+        <NavBar />
+        <main className="pt-28">{children}</main>
+      </body>
     </html>
   );
 }

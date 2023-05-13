@@ -1,7 +1,44 @@
-body {
-  @apply font-sans;
+.hero-text {
+  font-size: 4.5rem;
 }
 
-pre {
-  @apply font-mono;
+h1,
+.heading-1 {
+  font-size: 3.375rem;
+}
+
+h2,
+.heading-2 {
+  font-size: 2.625rem;
+}
+
+h3,
+.heading-3 {
+  font-size: 2.125rem;
+}
+
+h4,
+.heading-4 {
+  font-size: 1.75rem;
+}
+
+h5,
+.heading-5 {
+  font-size: 1.5rem;
+}
+
+p,
+.body-copy {
+  font-size: 1.25rem;
+}
+
+small,
+.small-copy,
+.button-copy {
+  font-size: 0.875rem;
+}
+
+li,
+.list-item-copy {
+  font-size: 1rem;
 }
