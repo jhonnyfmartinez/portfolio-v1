@@ -7,7 +7,7 @@ export default function NavBar() {
     <header className="header">
       <nav className="navbar">
         <Link className="navbar__logo" href="/">
-          <Image src="/logo.svg" alt="Vercel Logo" priority height={46} width={62} />
+          <Image src="/logo.svg" alt="Vercel Logo" priority height={49} width={69} />
         </Link>
         <div className="navbar__links">
           <Link className="navlink" href="#about">

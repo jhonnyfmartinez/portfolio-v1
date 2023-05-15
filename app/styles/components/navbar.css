@@ -19,5 +19,5 @@
 }
 
 .navlink__icon {
-  @apply text-primary;
+  @apply text-primary text-xl;
 }
