@@ -10,6 +10,15 @@ const createJestConfig = nextJest({
 const config = {
   // Add more setup options before each test is run
   // setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  collectCoverageFrom: ['./app/**'],
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      lines: 80,
+      functions: 80,
+      statements: 80,
+    },
+  },
   coveragePathIgnorePatterns: ['layout.tsx'],
   testEnvironment: 'jest-environment-jsdom',
 };
