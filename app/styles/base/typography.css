@@ -1,45 +1,45 @@
 .hero-text {
-  font-size: 4.5rem;
+  @apply text-[2.25rem] sm:text-[3.5rem] xl:text-[4.5rem];
 }
 
 h1,
 .heading-1 {
-  font-size: 3.375rem;
+  @apply text-[2rem] sm:text-[2.5rem] xl:text-[3.375rem];
 }
 
 h2,
 .heading-2 {
-  font-size: 2.625rem;
+  @apply text-[1.75rem] sm:text-[2.125rem] xl:text-[2.625rem];
 }
 
 h3,
 .heading-3 {
-  font-size: 2.125rem;
+  @apply text-[1.375rem] sm:text-[1.75rem] xl:text-[2.125rem];
 }
 
 h4,
 .heading-4 {
-  font-size: 1.75rem;
+  @apply text-[1.125rem] sm:text-[1.375rem] xl:text-[1.75rem];
 }
 
 h5,
 .heading-5 {
-  font-size: 1.5rem;
+  @apply text-[1rem] sm:text-[1.125rem] xl:text-[1.5rem];
 }
 
 p,
 .body-copy {
-  font-size: 1.25rem;
+  @apply text-[0.875rem] sm:text-[1rem] xl:text-[1.25rem];
 }
 
 small,
 a,
 .small-copy,
 .button-copy {
-  font-size: 0.875rem;
+  @apply text-[0.75rem] sm:text-[0.875rem];
 }
 
 li,
 .list-item-copy {
-  font-size: 1rem;
+  @apply text-[0.75rem] sm:text-[1rem];
 }
