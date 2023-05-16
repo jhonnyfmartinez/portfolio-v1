@@ -1,0 +1,7 @@
+.btn {
+  @apply flex items-center gap-2.5 px-8 py-[18px] w-fit;
+}
+
+.btn-primary {
+  @apply border-[2px] border-solid border-primary rounded-lg;
+}

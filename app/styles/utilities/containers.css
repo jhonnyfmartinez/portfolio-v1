@@ -1,0 +1,3 @@
+.hero-container {
+  @apply container px-[172px] py-[160px] flex flex-col gap-14;
+}

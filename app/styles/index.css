@@ -9,8 +9,10 @@
 
 @layer components {
   @import 'components/navbar.css';
+  @import 'components/button.css';
 }
 
 @tailwind utilities;
 @layer utilities {
+  @import 'utilities/containers.css';
 }
