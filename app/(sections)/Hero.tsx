@@ -2,7 +2,7 @@ import Button from '../components/Button';
 
 export default function Hero() {
   return (
-    <section className="section-container xl:px-[124px] xl:py-12 xl:gap-6">
+    <section className="section-container xl:px-[124px] xl:py-28 xl:gap-6">
       <pre className="text-accent">Hello world! 👋 My name is</pre>
       <h1 className="text-white hero-text">
         Jhonny Martinez

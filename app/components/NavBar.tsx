@@ -1,38 +1,43 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { PropsWithChildren } from 'react';
 import { TbUser, TbFolder, TbDeviceLaptop, TbMail } from 'react-icons/tb';
+
+type NavLinkProps = {
+  icon: (props: { className: string }) => React.ReactElement;
+  href: string;
+};
+
+const NavLink = (props: PropsWithChildren<NavLinkProps>) => {
+  const Icon = props.icon;
+  return (
+    <Link className="flex items-center gap-2 align-middle hover:text-primary" href={props.href}>
+      <Icon className="text-primary text-xl" />
+      {props.children}
+    </Link>
+  );
+};
 
 export default function NavBar() {
   return (
-    <header className="header">
-      <nav className="navbar" role="navigation">
-        <Link className="navbar__logo" href="/" data-testid="root-link">
-          <Image
-            src="/logo.svg"
-            alt="Vercel Logo"
-            priority
-            height={49}
-            width={69}
-            data-testid="logo"
-          />
+    <header className="fixed top-0 inset-x-0 z-30 h-28">
+      <nav className="bg-opacity-80 backdrop-blur-md px-16 py-8 flex items-center gap-8">
+        <Link className="transition-transform hover:scale-110" href="/" data-testid="root-link">
+          <Image src="/logo.svg" alt="Vercel Logo" priority height={49} width={69} />
         </Link>
-        <div className="navbar__links" data-testid="links-container">
-          <Link className="navlink" href="#about" data-testid="navlink">
-            <TbUser className="navlink__icon" />
+        <div className="flex flex-grow justify-end gap-9" data-testid="links-container">
+          <NavLink icon={TbUser} href="#about">
             About
-          </Link>
-          <Link className="navlink" href="#experience" data-testid="navlink">
-            <TbDeviceLaptop className="navlink__icon" />
+          </NavLink>
+          <NavLink icon={TbDeviceLaptop} href="#experience">
             Experience
-          </Link>
-          <Link className="navlink" href="#projects" data-testid="navlink">
-            <TbFolder className="navlink__icon" />
+          </NavLink>
+          <NavLink icon={TbFolder} href="#projects">
             Projects
-          </Link>
-          <Link className="navlink" href="#contact" data-testid="navlink">
-            <TbMail className="navlink__icon" />
+          </NavLink>
+          <NavLink icon={TbMail} href="#contact">
             Contact
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </header>

@@ -8,7 +8,6 @@
 }
 
 @layer components {
-  @import 'components/navbar.css';
   @import 'components/button.css';
 }
 
