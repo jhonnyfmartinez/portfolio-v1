@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
 import { Arvo, Source_Code_Pro } from 'next/font/google';
-import NavBar from './components/NavBar';
+import Header from './components/Header';
 import './styles/index.css';
 
 const arvo = Arvo({
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en" className={`${arvo.variable} ${sourceCodePro.variable}`}>
       <body suppressHydrationWarning={true}>
-        <NavBar />
+        <Header />
         <main className="pt-28">{children}</main>
       </body>
     </html>

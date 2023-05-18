@@ -30,5 +30,6 @@ module.exports = {
     },
     extend: {},
   },
+  blocklist: ['blur'],
   plugins: [],
 };

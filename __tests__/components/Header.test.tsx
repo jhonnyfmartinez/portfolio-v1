@@ -1,15 +1,14 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import NavBar from '@/app/components/NavBar';
+import Header from '@/app/components/Header';
 
-describe('Navbar', () => {
+describe('Header', () => {
   beforeEach(() => {
-    render(<NavBar />);
+    render(<Header />);
   });
 
   it('Should render a nav element', () => {
     const nav = screen.getByRole('navigation');
-
     expect(nav).toBeInTheDocument();
   });
 
@@ -27,13 +26,11 @@ describe('Navbar', () => {
     expect(rootLink.firstChild?.nodeName).toBe('IMG');
   });
 
-  it('Should have 4 links', () => {
-    const linksContainer = screen.getByTestId('links-container');
+  it('Should add blur className to body when drawer toggled', () => {
+    const drawerToggleButton = screen.getByRole('button');
 
-    expect(linksContainer.childElementCount).toBe(4);
-    expect(linksContainer.children[0].getAttribute('href')).toBe('#about');
-    expect(linksContainer.children[1].getAttribute('href')).toBe('#experience');
-    expect(linksContainer.children[2].getAttribute('href')).toBe('#projects');
-    expect(linksContainer.children[3].getAttribute('href')).toBe('#contact');
+    fireEvent.click(drawerToggleButton);
+
+    expect(document.body).toHaveClass('blur');
   });
 });
