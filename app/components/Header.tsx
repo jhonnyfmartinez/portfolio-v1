@@ -23,8 +23,8 @@ export default function Header() {
   }, [drawerOpen]);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-30 h-28">
-      <nav className="bg-opacity-80 backdrop-blur-md flex items-center gap-8 px-8 py-8 xl:px-16">
+    <header className="fixed top-0 inset-x-0 z-30 h-20 bg-background bg-opacity-80 drop-shadow-md backdrop-blur-[10px] flex items-center">
+      <nav className="w-full flex items-center gap-8 px-8 xl:px-16">
         <Link className="transition-transform hover:scale-110" href="/" data-testid="root-link">
           <Image src="/logo.svg" alt="Vercel Logo" priority height={49} width={69} />
         </Link>
