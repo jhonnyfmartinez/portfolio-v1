@@ -2,16 +2,22 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { TbMenu2, TbX } from 'react-icons/tb';
 import Drawer from './Drawer';
 import NavLinks from './NavLinks';
+import useOnClickOutside from '../hooks/useClickOutside';
 
 export default function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const drawerRef = useRef(null);
 
   const handleToggleDrawer = useCallback(() => {
     setDrawerOpen(v => !v);
+  }, []);
+
+  const handleCloseDrawer = useCallback(() => {
+    setDrawerOpen(false);
   }, []);
 
   useEffect(() => {
@@ -21,6 +27,8 @@ export default function Header() {
       document.body.classList.remove('blur');
     }
   }, [drawerOpen]);
+
+  useOnClickOutside(drawerRef, handleCloseDrawer);
 
   return (
     <header className="fixed top-0 inset-x-0 z-30 h-20 bg-background bg-opacity-80 drop-shadow-md backdrop-blur-[10px] flex items-center">
@@ -34,7 +42,7 @@ export default function Header() {
           </button>
         </div>
         <NavLinks className="flex-grow justify-end gap-9 hidden sm:flex" />
-        <Drawer open={drawerOpen} />
+        <Drawer ref={drawerRef} open={drawerOpen} />
       </nav>
     </header>
   );

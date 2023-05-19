@@ -1,0 +1,6 @@
+@layer components {
+  .bullet-list > li:before {
+    @apply mr-3.5 text-primary;
+    content: '❯';
+  }
+}

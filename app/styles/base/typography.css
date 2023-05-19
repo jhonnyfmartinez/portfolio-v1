@@ -42,6 +42,6 @@
 
   li,
   .list-item-copy {
-    @apply text-[0.75rem] sm:text-[1rem];
+    @apply text-[0.75rem] sm:text-[0.875rem];
   }
 }
