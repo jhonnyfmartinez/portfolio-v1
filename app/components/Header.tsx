@@ -10,14 +10,10 @@ import useOnClickOutside from '../hooks/useClickOutside';
 
 export default function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const drawerRef = useRef(null);
+  const drawerWraperRef = useRef(null);
 
   const handleToggleDrawer = useCallback(() => {
     setDrawerOpen(v => !v);
-  }, []);
-
-  const handleCloseDrawer = useCallback(() => {
-    setDrawerOpen(false);
   }, []);
 
   useEffect(() => {
@@ -28,7 +24,7 @@ export default function Header() {
     }
   }, [drawerOpen]);
 
-  useOnClickOutside(drawerRef, handleCloseDrawer);
+  useOnClickOutside(drawerWraperRef, setDrawerOpen.bind(null, false));
 
   return (
     <header className="fixed top-0 inset-x-0 z-30 h-20 bg-background bg-opacity-80 drop-shadow-md backdrop-blur-[10px] flex items-center">
@@ -36,13 +32,16 @@ export default function Header() {
         <Link className="transition-transform hover:scale-110" href="/" data-testid="root-link">
           <Image src="/logo.svg" alt="Vercel Logo" priority height={49} width={69} />
         </Link>
-        <div className="flex-grow flex justify-end items-center sm:hidden">
-          <button className="ml-auto text-3xl" onClick={handleToggleDrawer}>
+        <NavLinks className="flex-grow justify-end gap-9 hidden sm:flex" />
+        <div
+          ref={drawerWraperRef}
+          className="flex-grow flex justify-end items-center sm:hidden"
+          data-testid="wrapper">
+          <button className="text-3xl" onClick={handleToggleDrawer} data-testid="toggle-button">
             {drawerOpen ? <TbX /> : <TbMenu2 />}
           </button>
+          <Drawer open={drawerOpen} />
         </div>
-        <NavLinks className="flex-grow justify-end gap-9 hidden sm:flex" />
-        <Drawer ref={drawerRef} open={drawerOpen} />
       </nav>
     </header>
   );
