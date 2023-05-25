@@ -1,9 +1,6 @@
-import { render, renderHook, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Header from '@/app/components/Header';
-import { act } from 'react-dom/test-utils';
-import { sleep } from '@/app/utils/sleep';
-import useOnClickOutside from '@/app/hooks/useClickOutside';
 
 describe('Header', () => {
   beforeEach(() => {
@@ -48,10 +45,22 @@ describe('Header', () => {
 
     fireEvent.mouseDown(document.activeElement || document.body);
 
-    await act(() => sleep(300));
-
     const toggleIcon = drawerToggleButton.children.item(0) as HTMLElement;
 
     expect(toggleIcon.dataset.testname).toBe('menu');
+  });
+
+  it('Should not close drawer if click inside', async () => {
+    const drawerToggleButton = screen.getByRole('button');
+
+    fireEvent.click(drawerToggleButton);
+
+    const wrapper = screen.getByTestId('wrapper');
+
+    fireEvent.mouseDown(wrapper);
+
+    const toggleIcon = drawerToggleButton.children.item(0) as HTMLElement;
+
+    expect(toggleIcon.dataset.testname).toBe('x');
   });
 });
