@@ -33,4 +33,34 @@ describe('Header', () => {
 
     expect(document.body).toHaveClass('blur');
   });
+
+  it('Should close drawer if click outside', async () => {
+    const drawerToggleButton = screen.getByRole('button');
+
+    fireEvent.click(drawerToggleButton);
+
+    const rootLink = screen.getByTestId('root-link');
+
+    rootLink.focus();
+
+    fireEvent.mouseDown(document.activeElement || document.body);
+
+    const toggleIcon = drawerToggleButton.children.item(0) as HTMLElement;
+
+    expect(toggleIcon.dataset.testname).toBe('menu');
+  });
+
+  it('Should not close drawer if click inside', async () => {
+    const drawerToggleButton = screen.getByRole('button');
+
+    fireEvent.click(drawerToggleButton);
+
+    const wrapper = screen.getByTestId('wrapper');
+
+    fireEvent.mouseDown(wrapper);
+
+    const toggleIcon = drawerToggleButton.children.item(0) as HTMLElement;
+
+    expect(toggleIcon.dataset.testname).toBe('x');
+  });
 });

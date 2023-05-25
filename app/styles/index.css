@@ -1,18 +1,24 @@
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@layer base {
-  @import 'base/variables.css';
-  @import 'base/colors.css';
-  @import 'base/typography.css';
-}
+/* Base */
+@import 'base/variables.css';
+@import 'base/colors.css';
+@import 'base/typography.css';
 
-@layer components {
-  @import 'components/drawer.css';
-}
+/* Components */
+@import 'components/drawer.css';
+@import 'components/list.css';
 
-@tailwind utilities;
-@layer utilities {
-  @import 'utilities/containers.css';
-  @import 'utilities/blur.css';
+/* Utilities */
+@import 'utilities/containers.css';
+@import 'utilities/flex.css';
+
+/* When drawer open apply blur to main elements */
+body.blur main > * {
+  filter: blur(5px) brightness(0.7);
+  transition: var(--transition);
+  pointer-events: none;
+  user-select: none;
 }

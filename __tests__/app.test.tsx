@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import App from '../app/page';
+import App from '@/app/page';
 import '@testing-library/jest-dom';
 
 describe('App', () => {

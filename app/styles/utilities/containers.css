@@ -1,3 +1,5 @@
-.section-container {
-  @apply container flex flex-col px-[32px] py-[48px] gap-6 sm:px-[124px] sm:py-[120px] sm:gap-10 xl:px-[172px] xl:py-[160px] xl:gap-14;
+@layer utilities {
+  .section-container {
+    @apply container flex flex-col px-[32px] py-[48px] gap-6 sm:px-[124px] sm:py-[120px] sm:gap-10 xl:px-[130px] xl:py-[160px] xl:gap-14;
+  }
 }
