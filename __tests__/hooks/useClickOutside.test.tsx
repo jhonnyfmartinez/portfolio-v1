@@ -4,6 +4,10 @@ import useOnClickOutside from '@/app/hooks/useClickOutside';
 import { createRef } from 'react';
 
 describe('useClickOutside', () => {
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+
   it('should call outside click handler when clicking outside', () => {
     const handler = jest.fn();
     const ref = createRef<HTMLDivElement>();
