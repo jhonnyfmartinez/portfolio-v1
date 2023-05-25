@@ -38,23 +38,20 @@ describe('Header', () => {
   });
 
   it('Should close drawer if click outside', async () => {
-    const drawer = screen.getByTestId('drawer');
     const drawerToggleButton = screen.getByRole('button');
-    const wrapper = screen.getByTestId('wrapper');
-    const wrapperRef = { current: wrapper };
-    const mockHandler = jest.fn();
-
-    renderHook(() => useOnClickOutside(wrapperRef, mockHandler));
 
     fireEvent.click(drawerToggleButton);
 
     const rootLink = screen.getByTestId('root-link');
 
-    fireEvent.click(rootLink);
+    rootLink.focus();
+
+    fireEvent.mouseDown(document.activeElement || document.body);
 
     await act(() => sleep(300));
 
-    // expect(mockHandler).toBeCalledTimes(1);
-    expect(drawer).toHaveClass('side-drawer translate-x-full');
+    const toggleIcon = drawerToggleButton.children.item(0) as HTMLElement;
+
+    expect(toggleIcon.dataset.testname).toBe('menu');
   });
 });

@@ -38,7 +38,7 @@ export default function Header() {
           className="flex-grow flex justify-end items-center sm:hidden"
           data-testid="wrapper">
           <button className="text-3xl" onClick={handleToggleDrawer} data-testid="toggle-button">
-            {drawerOpen ? <TbX /> : <TbMenu2 />}
+            {drawerOpen ? <TbX data-testname="x" /> : <TbMenu2 data-testname="menu" />}
           </button>
           <Drawer open={drawerOpen} />
         </div>
