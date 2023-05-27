@@ -10,10 +10,12 @@
 /* Components */
 @import 'components/drawer.css';
 @import 'components/list.css';
+@import 'components/tabs.css';
 
 /* Utilities */
 @import 'utilities/containers.css';
 @import 'utilities/flex.css';
+@import 'utilities/scroll.css';
 
 /* When drawer open apply blur to main elements */
 body.blur main > * {

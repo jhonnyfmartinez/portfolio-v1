@@ -1,6 +1,9 @@
 @layer components {
+  .bullet-list > li {
+    @apply relative pl-[30px];
+  }
   .bullet-list > li:before {
-    @apply mr-3.5 text-primary;
+    @apply mr-3.5 text-primary absolute left-0 top-0;
     content: '❯';
   }
 }

@@ -1,11 +1,17 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from '@/app/page';
 import '@testing-library/jest-dom';
 
 describe('App', () => {
   it('App should render', () => {
     render(<App />);
-    // Mocking test until more components are created
-    expect(true).toBe(true);
+
+    const heroSection = screen.getByTestId('hero-section');
+    const aboutSection = screen.getByTestId('about-section');
+    const experienceSection = screen.getByTestId('experience-section');
+
+    expect(heroSection).toBeInTheDocument();
+    expect(aboutSection).toBeInTheDocument();
+    expect(experienceSection).toBeInTheDocument();
   });
 });

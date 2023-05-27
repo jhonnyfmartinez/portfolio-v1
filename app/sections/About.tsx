@@ -3,7 +3,7 @@ import SectionHeading from '../components/SectionHeading';
 import Image from 'next/image';
 
 const About = () => (
-  <section className="section-container">
+  <section className="section-container" data-testid="about-section">
     <SectionHeading icon={TbUser}>About me</SectionHeading>
     <div className="flex flex-col items-center gap-20 xl:flex-row">
       <div className="flex flex-col gap-6">
