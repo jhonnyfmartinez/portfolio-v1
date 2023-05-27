@@ -1,20 +1,11 @@
 import clsx from 'clsx';
 import Image from 'next/image';
-import Link from 'next/link';
-import { TbBrandGithub, TbExternalLink } from 'react-icons/tb';
 import { ProjectInterface } from '../interfaces/project.interface';
+import TechLinks from './TechLinks';
 
 type FeaturedProjectProps = ProjectInterface & {
   index: number;
 };
-
-const ListIconLink = (props: { href: string; icon: React.ReactElement }) => (
-  <li hidden={!props.href}>
-    <Link className="text-2xl hover:text-primary" href={props.href} target="_blank">
-      {props.icon}
-    </Link>
-  </li>
-);
 
 const FeaturedProject = (props: FeaturedProjectProps) => {
   const isOdd = props.index % 2 !== 0;
@@ -33,9 +24,8 @@ const FeaturedProject = (props: FeaturedProjectProps) => {
           <ul className="tech-list">
             {props.tech.map((tech, index) => (
               <li
-                className={clsx(['font-mono small-copy', { 'hidden xlblock': index > 3 }])}
-                key={`${props.name}-${tech}`}
-                hidden={index > 3}>
+                className={clsx(['font-mono small-copy', { 'hidden sm:block': index > 3 }])}
+                key={`${props.name}-${tech}`}>
                 {tech}
               </li>
             ))}
@@ -52,10 +42,7 @@ const FeaturedProject = (props: FeaturedProjectProps) => {
           isOdd ? 'xl:translate-x-[120px]' : 'xl:translate-x-[-120px]',
         ])}>
         <p className="small-copy">{props.description}</p>
-        <ul className="flex items-center gap-4 justify-end mt-4">
-          <ListIconLink href={props.links.github} icon={<TbBrandGithub />} />
-          <ListIconLink href={props.links.demo} icon={<TbExternalLink />} />
-        </ul>
+        <TechLinks className="justify-end mt-4" links={props.links} />
       </div>
     </article>
   );

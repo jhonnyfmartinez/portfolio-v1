@@ -114,3 +114,21 @@ export const FEATURED_PROJECTS_DATA: ProjectInterface[] = [
     },
   },
 ];
+
+export const PROJECTS_DATA: Omit<ProjectInterface, 'image'>[] = [
+  {
+    name: 'Minigrep',
+    type: 'CLI',
+    description:
+      'A very simple implementation of the basic functionality of the grep command-line tool using Rust.',
+    links: { demo: '', github: 'https://github.com/jhonny9550/minigrep' },
+    tech: ['Rust'],
+  },
+  {
+    name: 'Bingo Game',
+    type: 'Web App',
+    description: 'A bingo game that you can play with your friends.',
+    links: { demo: '', github: 'https://github.com/jhonny9550/bingo-game' },
+    tech: ['React', 'TailwindCSS', 'Vite', 'AWS'],
+  },
+];
