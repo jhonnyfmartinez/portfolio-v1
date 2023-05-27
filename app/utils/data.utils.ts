@@ -1,4 +1,6 @@
-export const EXPERIENCE_DATA = [
+import { ExperienceInterface, ProjectInterface } from '../interfaces/project.interface';
+
+export const EXPERIENCE_DATA: ExperienceInterface[] = [
   {
     title: 'Pearlii',
     content: {
@@ -74,7 +76,7 @@ export const EXPERIENCE_DATA = [
   },
 ];
 
-export const FEATURED_PROJECTS_DATA = [
+export const FEATURED_PROJECTS_DATA: ProjectInterface[] = [
   {
     name: 'Wholesale E-commerce',
     type: 'Website platform',

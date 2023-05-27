@@ -2,17 +2,9 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbBrandGithub, TbExternalLink } from 'react-icons/tb';
+import { ProjectInterface } from '../interfaces/project.interface';
 
-type FeaturedProjectProps = {
-  name: string;
-  type: string;
-  description: string;
-  tech: string[];
-  image: string;
-  links: {
-    github: string;
-    demo: string;
-  };
+type FeaturedProjectProps = ProjectInterface & {
   index: number;
 };
 
