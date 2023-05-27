@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import NavLinks from '../../app/components/NavLinks';
+import NavLinks from '@/app/components/NavLinks';
 import '@testing-library/jest-dom';
 
 describe('NavLinks', () => {

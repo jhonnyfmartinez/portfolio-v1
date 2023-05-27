@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Drawer from '../../app/components/Drawer';
+import Drawer from '@/app/components/Drawer';
 import '@testing-library/jest-dom';
 
 describe('Drawer', () => {

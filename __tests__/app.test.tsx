@@ -8,8 +8,10 @@ describe('App', () => {
 
     const heroSection = screen.getByTestId('hero-section');
     const aboutSection = screen.getByTestId('about-section');
+    const experienceSection = screen.getByTestId('experience-section');
 
     expect(heroSection).toBeInTheDocument();
     expect(aboutSection).toBeInTheDocument();
+    expect(experienceSection).toBeInTheDocument();
   });
 });
