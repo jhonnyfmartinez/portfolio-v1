@@ -1,6 +1,6 @@
 import { TbMail } from 'react-icons/tb';
-import SectionHeading from '../components/SectionHeading';
-import Button from '../components/Button';
+import SectionHeading from '@/app/components/SectionHeading';
+import Button from '@/app/components/Button';
 
 const Contact = () => (
   <section className="section-container sm:gap-8" id="contact">

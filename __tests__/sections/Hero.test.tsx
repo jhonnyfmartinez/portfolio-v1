@@ -6,9 +6,9 @@ describe('Hero section', () => {
   it('should render hero section', () => {
     render(<Hero />);
 
-    const title = screen.getByText('Jhonny Martinez');
+    const title = screen.getByText('Jhonny Martinez.');
     const greeting = screen.getByText('Hello world! 👋 My name is');
-    const description = screen.getByText('I create software products.');
+    const description = screen.getByText('I craft software solutions.');
     const downloadResumeButton = screen.getByText('Download my resume');
 
     expect(title).toBeInTheDocument();
