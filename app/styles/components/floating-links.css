@@ -1,0 +1,13 @@
+@layer components {
+  .floating-links {
+    @apply hidden xl:flex xl:flex-col xl:items-center xl:fixed xl:right-7;
+    /* 50% - half height - header height - first pseudo bar element height */
+    top: calc(50% - 47px - 80px - 85px);
+  }
+
+  .floating-links::before,
+  .floating-links::after {
+    content: '';
+    @apply w-px h-[85px] bg-text;
+  }
+}

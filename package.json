@@ -1,13 +1,31 @@
 {
   "name": "portfolio-v1",
-  "version": "0.1.0",
-  "private": true,
+  "description": "My personal portfolio built with Next.js and Tailwind CSS.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jhonny Martinez",
+    "email": "jhonny9550@gmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watchAll",
+    "prepare": "husky install"
   },
+  "keywords": [
+    "next.js",
+    "react",
+    "tailwindcss"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhonny9550/portfolio-v1"
+  },
+  "browserslist": "last 2 versions",
   "dependencies": {
     "@types/node": "20.1.2",
     "@types/react": "18.2.6",
@@ -25,8 +43,13 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.2"
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "lint-staged": "^13.2.2",
+    "postcss-import": "^15.1.0"
   }
 }

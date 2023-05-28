@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src="public/logo.svg" alt="jfmartinez.dev logo">
+  <h1>jfmartinez.dev</h1>
+</div>
 
-## Getting Started
+The first version of my [personal website](https://jfmartinez.dev). It's a simple portfolio website that showcases my projects and skills. It's built with [NextJS](https://nextjs.org/) and [TailwindCSS](https://tailwindcss.com/).
 
-First, run the development server:
+![Project Screenshot](public/featured/portfolio.jpg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Installation :wrench:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To install the project, follow these steps:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository
+2. Run `npm install` to install the dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage :rocket:
 
-## Learn More
+To use the project, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Run `npm run dev` to start the development server
+2. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT license. See the `LICENSE` file for more information.

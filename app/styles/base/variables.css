@@ -1,19 +1,25 @@
-:root {
-  --color-primary: 240 101 67;
-  --color-accent: 240 157 81;
-  --color-text: 199 199 199;
-  --color-paper: 44 46 62;
-  --color-background: 31 32 43;
-  --color-headings: 222 222 222;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
+    /* Theme color variables */
     --color-primary: 240 101 67;
     --color-accent: 240 157 81;
-    --color-text: 199 199 199;
+    --color-text: 179 179 179;
     --color-paper: 44 46 62;
     --color-background: 31 32 43;
     --color-headings: 222 222 222;
+
+    /* Default transition */
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-primary: 240 101 67;
+      --color-accent: 240 157 81;
+      --color-text: 179 179 179;
+      --color-paper: 44 46 62;
+      --color-background: 31 32 43;
+      --color-headings: 222 222 222;
+    }
   }
 }
