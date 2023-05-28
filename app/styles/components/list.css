@@ -13,6 +13,6 @@
 
   .tech-list::before {
     content: '//';
-    @apply bg-primary px-2 py-0.5 rounded-tl-lg rounded-bl-lg xl:py-2;
+    @apply bg-primary px-2 py-0.5 rounded-tl-lg rounded-bl-lg sm:py-2;
   }
 }

@@ -1,6 +1,7 @@
 import { TbUser } from 'react-icons/tb';
 import SectionHeading from '../components/SectionHeading';
 import Image from 'next/image';
+import { TECH_STACK_DATA } from '../utils/data.utils';
 
 const About = () => (
   <section className="section-container" data-testid="about-section">
@@ -13,8 +14,9 @@ const About = () => (
           that a lot and ended up doing the homework for all my classmates.
         </p>
         <p>
-          During my career I have work for multiple startups and a couple of big companies. I have
-          implemented solutions around the events, health, retail and financial industries.
+          I am passionate about building excellent software that improves the lives of those around
+          me. I specialize in creating software for clients ranging from individuals and
+          small-businesses all the way to large enterprise corporations.
         </p>
         <p>
           Currently, I&apos;m looking for a new role, in the meantime I build my online presence,
@@ -22,12 +24,9 @@ const About = () => (
         </p>
         <p>Here is my main tech stack:</p>
         <ul className="bullet-list font-mono grid grid-cols-2 gap-y-3.5 gap-x-2 xl:gap-x-14">
-          <li>JavaScript (ES6+)</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Angular</li>
-          <li>NodeJS</li>
-          <li>NextJS</li>
+          {TECH_STACK_DATA.map(tech => (
+            <li key={tech}>{tech}</li>
+          ))}
         </ul>
       </div>
       <Image
