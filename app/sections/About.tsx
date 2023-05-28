@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { TECH_STACK_DATA } from '../utils/data.utils';
 
 const About = () => (
-  <section className="section-container" data-testid="about-section">
+  <section className="section-container" data-testid="about-section" id="about">
     <SectionHeading icon={TbUser}>About me</SectionHeading>
     <div className="flex flex-col items-center gap-20 xl:flex-row">
       <div className="flex flex-col gap-6">
