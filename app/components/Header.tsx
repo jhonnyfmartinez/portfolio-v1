@@ -29,7 +29,10 @@ export default function Header() {
   return (
     <header className="fixed top-0 inset-x-0 z-30 h-20 bg-background bg-opacity-80 drop-shadow-md backdrop-blur-[10px] flex items-center">
       <nav className="w-full flex items-center gap-8 px-8 xl:px-16">
-        <Link className="transition-transform hover:scale-110" href="/" data-testid="root-link">
+        <Link
+          className="transition-transform max-w-[50px] hover:scale-110"
+          href="/"
+          data-testid="root-link">
           <Image src="/logo.svg" alt="Vercel Logo" priority height={49} width={69} />
         </Link>
         <NavLinks className="flex-grow justify-end gap-9 hidden sm:flex" />
