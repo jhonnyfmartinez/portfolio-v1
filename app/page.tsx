@@ -1,5 +1,6 @@
 // istanbul ignore file
 import About from './sections/About';
+import Contact from './sections/Contact';
 import Experience from './sections/Experience';
 import Featured from './sections/Featured';
 import Hero from './sections/Hero';
@@ -13,6 +14,7 @@ export default function Home() {
       <Experience />
       <Featured />
       <Projects />
+      <Contact />
     </>
   );
 }

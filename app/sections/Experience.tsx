@@ -11,7 +11,7 @@ import { EXPERIENCE_DATA } from '../utils/data.utils';
 const Experience = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   return (
-    <section className="section-container sm:px-16 xl:px-[260px]" data-testid="experience-section">
+    <section className="section-container sm:px-16 xl:px-[260px]" id="experience">
       <SectionHeading icon={TbDeviceLaptop}>Professional experience</SectionHeading>
       <div className="flex flex-col gap-8 sm:flex-row">
         <Tabs
