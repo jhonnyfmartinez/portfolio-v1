@@ -11,6 +11,7 @@
 @import 'components/drawer.css';
 @import 'components/list.css';
 @import 'components/tabs.css';
+@import 'components/floating-links.css';
 
 /* Utilities */
 @import 'utilities/containers.css';

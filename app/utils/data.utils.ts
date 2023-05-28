@@ -1,5 +1,7 @@
 // istanbul ignore file
+import { FaLinkedin, FaTwitter, FaGithub, FaStackOverflow, FaFileDownload } from 'react-icons/fa';
 import { ExperienceInterface, ProjectInterface } from '../interfaces/project.interface';
+import { IconType } from 'react-icons';
 
 export const EXPERIENCE_DATA: ExperienceInterface[] = [
   {
@@ -141,4 +143,32 @@ export const TECH_STACK_DATA: string[] = [
   'Angular',
   'NodeJS',
   'NextJS',
+];
+
+export const SOCIAL_MEDIA_DATA: { icon: IconType; link: string; label: string }[] = [
+  {
+    link: 'https://www.linkedin.com/in/jhonny9550/',
+    icon: FaLinkedin,
+    label: 'Linkedin',
+  },
+  {
+    link: 'https://twitter.com/jhotinez',
+    icon: FaTwitter,
+    label: 'Twitter',
+  },
+  {
+    link: 'https://www.github.com/jhonny9550/',
+    icon: FaGithub,
+    label: 'Github',
+  },
+  {
+    link: 'https://stackoverflow.com/users/7296576/jhonny-mart%c3%adnez',
+    icon: FaStackOverflow,
+    label: 'StackOverflow',
+  },
+  {
+    link: '/resume.pdf',
+    icon: FaFileDownload,
+    label: 'Download Resume',
+  },
 ];

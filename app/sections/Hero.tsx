@@ -11,8 +11,10 @@ export default function Hero() {
         <span className="block text-headings">I create software products.</span>
       </h1>
       <p className="sm:max-w-[320px] xl:max-w-[500px]">
-        I’m a <span className="text-primary">Software Engineer</span> with the mission of create
-        unique products and digital experiences. I’m currently on the chase of my next role.
+        As a <span className="text-primary">Software Engineer</span>, I&apos;m passionate about
+        creating unique products and digital experiences that solve real-world problems. I&apos;m
+        currently on the lookout for my next challenge, where I can use my skills to make a positive
+        impact.
       </p>
       <Button className="mt-[46px]" href="/resume.pdf" target="_blank" download>
         Download my resume
