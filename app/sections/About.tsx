@@ -1,7 +1,7 @@
 import { TbUser } from 'react-icons/tb';
-import SectionHeading from '../components/SectionHeading';
+import SectionHeading from '@/app/components/SectionHeading';
 import Image from 'next/image';
-import { TECH_STACK_DATA } from '../utils/data.utils';
+import { TECH_STACK_DATA } from '@/app/utils/data.utils';
 
 const About = () => (
   <section className="section-container" data-testid="about-section" id="about">

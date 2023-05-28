@@ -1,9 +1,8 @@
 // istanbul ignore file
-import React from 'react';
-import SectionHeading from '../components/SectionHeading';
+import SectionHeading from '@/app/components/SectionHeading';
 import { TbFolder } from 'react-icons/tb';
-import { PROJECTS_DATA } from '../utils/data.utils';
-import ProjectCard from '../components/ProjectCard';
+import { PROJECTS_DATA } from '@/app/utils/data.utils';
+import ProjectCard from '@/app/components/ProjectCard';
 
 const Projects = () => (
   <section className="section-container sm:px-16">

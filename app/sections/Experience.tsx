@@ -2,11 +2,11 @@
 'use client';
 
 import { useState } from 'react';
-import SectionHeading from '../components/SectionHeading';
+import SectionHeading from '@/app/components/SectionHeading';
 import { TbDeviceLaptop } from 'react-icons/tb';
-import Tabs from '../components/Tabs';
-import TabContent from '../components/TabContent';
-import { EXPERIENCE_DATA } from '../utils/data.utils';
+import Tabs from '@/app/components/Tabs';
+import TabContent from '@/app/components/TabContent';
+import { EXPERIENCE_DATA } from '@/app/utils/data.utils';
 
 const Experience = () => {
   const [selectedTab, setSelectedTab] = useState(0);

@@ -1,5 +1,5 @@
 import { TbCode } from 'react-icons/tb';
-import { ProjectInterface } from '../interfaces/project.interface';
+import { ProjectInterface } from '@/app/interfaces/project.interface';
 import TechLinks from './TechLinks';
 
 type ProjectCardProps = Omit<ProjectInterface, 'image'>;

@@ -6,7 +6,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { TbMenu2, TbX } from 'react-icons/tb';
 import Drawer from './Drawer';
 import NavLinks from './NavLinks';
-import useOnClickOutside from '../hooks/useClickOutside';
+import useOnClickOutside from '@/app/hooks/useClickOutside';
 
 export default function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
