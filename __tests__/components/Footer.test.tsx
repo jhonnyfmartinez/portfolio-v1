@@ -1,6 +1,7 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Footer from '@/app/components/Footer';
+import { SOCIAL_MEDIA_DATA } from '@/app/utils/data.utils';
 
 describe('Footer', () => {
   beforeEach(() => {
@@ -17,5 +18,13 @@ describe('Footer', () => {
     const link = screen.getByText('Designed & built by Jhonny Martinez');
 
     expect(link).toHaveAttribute('href', 'https://github.com/jhonny9550/portfolio-v1');
+  });
+
+  it('Should render social links', () => {
+    const socialLinks = screen.getByRole('list');
+    const links = screen.getAllByRole('listitem');
+
+    expect(socialLinks).toBeInTheDocument();
+    expect(links).toHaveLength(SOCIAL_MEDIA_DATA.length);
   });
 });
