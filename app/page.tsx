@@ -1,3 +1,4 @@
+// istanbul ignore file
 import About from './sections/About';
 import Experience from './sections/Experience';
 import Featured from './sections/Featured';

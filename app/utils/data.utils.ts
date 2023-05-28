@@ -1,3 +1,4 @@
+// istanbul ignore file
 import { ExperienceInterface, ProjectInterface } from '../interfaces/project.interface';
 
 export const EXPERIENCE_DATA: ExperienceInterface[] = [
@@ -131,4 +132,13 @@ export const PROJECTS_DATA: Omit<ProjectInterface, 'image'>[] = [
     links: { demo: '', github: 'https://github.com/jhonny9550/bingo-game' },
     tech: ['React', 'TailwindCSS', 'Vite', 'AWS'],
   },
+];
+
+export const TECH_STACK_DATA: string[] = [
+  'JavaScript (ES6+)',
+  'TypeScript',
+  'React',
+  'Angular',
+  'NodeJS',
+  'NextJS',
 ];

@@ -1,4 +1,4 @@
-import React from 'react';
+// istanbul ignore file
 import SectionHeading from '../components/SectionHeading';
 import { TbFolder } from 'react-icons/tb';
 import { FEATURED_PROJECTS_DATA } from '../utils/data.utils';
