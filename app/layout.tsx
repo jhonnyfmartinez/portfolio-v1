@@ -2,6 +2,7 @@ import { PropsWithChildren } from 'react';
 import { Arvo, Source_Code_Pro } from 'next/font/google';
 import Header from './components/Header';
 import './styles/index.css';
+import Footer from './components/Footer';
 
 const arvo = Arvo({
   weight: ['400', '700'],
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body suppressHydrationWarning={true}>
         <Header />
         <main className="pt-28">{children}</main>
+        <Footer />
       </body>
     </html>
   );
