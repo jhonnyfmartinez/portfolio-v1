@@ -1,7 +1,11 @@
 {
   "name": "portfolio-v1",
-  "version": "0.1.0",
-  "private": true,
+  "description": "My personal portfolio built with Next.js and Tailwind CSS.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jhonny Martinez",
+    "email": "jhonny9550@gmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +15,17 @@
     "test:watch": "jest --coverage --watchAll",
     "prepare": "husky install"
   },
+  "keywords": [
+    "next.js",
+    "react",
+    "tailwindcss"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhonny9550/portfolio-v1"
+  },
+  "browserlist": "last 2 versions",
   "dependencies": {
     "@types/node": "20.1.2",
     "@types/react": "18.2.6",
