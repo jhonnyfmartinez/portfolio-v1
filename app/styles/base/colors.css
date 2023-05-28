@@ -1,4 +1,6 @@
-body {
-  color: rgb(var(--color-text));
-  background: rgb(var(--color-background));
+@layer base {
+  body {
+    color: rgb(var(--color-text));
+    background: rgb(var(--color-background));
+  }
 }

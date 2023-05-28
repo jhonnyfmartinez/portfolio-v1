@@ -21,11 +21,15 @@ module.exports = {
       background: 'rgb(var(--color-background) / <alpha-value>)',
       headings: 'rgb(var(--color-headings) / <alpha-value>)',
     },
+    container: {
+      center: true,
+    },
     fontFamily: {
       sans: ['var(--font-arvo)', ...fontFamily.sans],
       mono: ['var(--font-scp)', ...fontFamily.mono],
     },
     extend: {},
   },
+  blocklist: ['blur'],
   plugins: [],
 };

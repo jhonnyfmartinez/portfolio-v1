@@ -1,0 +1,18 @@
+@layer components {
+  .bullet-list > li {
+    @apply relative pl-[30px];
+  }
+  .bullet-list > li:before {
+    @apply mr-3.5 text-primary absolute left-0 top-0;
+    content: '❯';
+  }
+
+  .tech-list {
+    @apply bg-paper flex items-center gap-4 rounded-tr-lg rounded-br-lg pr-4;
+  }
+
+  .tech-list::before {
+    content: '//';
+    @apply bg-primary px-2 py-0.5 rounded-tl-lg rounded-bl-lg sm:py-2;
+  }
+}

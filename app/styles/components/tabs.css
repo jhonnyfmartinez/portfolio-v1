@@ -1,0 +1,9 @@
+@layer components {
+  .tabs {
+    --lateral-offset: 41px;
+    margin-left: calc(var(--lateral-offset) * -1);
+    padding-left: var(--lateral-offset);
+    width: calc(100% + var(--lateral-offset) * 2);
+    @apply flex py-2.5 pr-2.5 relative overflow-x-auto touch-pan-x no-scrollbar visible sm:flex-col sm:p-0 sm:ml-0 sm:w-auto sm:min-w-fit;
+  }
+}

@@ -1,0 +1,6 @@
+@layer components {
+  .side-drawer {
+    @apply fixed inset-y-0 right-0 -z-10 h-screen px-12 py-8 bg-background drop-shadow-lg transition-transform flex items-center justify-center sm:hidden;
+    width: min(70vw, 400px);
+  }
+}
