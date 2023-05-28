@@ -17,7 +17,7 @@ const SocialLinks = (props: SocialLinksProps) => (
             aria-label={label}
             rel="noreferrer"
             download={label === 'Download Resume'}>
-            <Icon className="text-xl sm:text-3xl" title={label} />
+            <Icon className="text-xl sm:text-2xl" title={label} />
           </Link>
         </li>
       );
