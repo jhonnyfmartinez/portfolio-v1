@@ -1,7 +1,6 @@
-import { render, screen } from '@testing-library/react';
 import TabContent from '@/app/components/TabContent';
-import '@testing-library/jest-dom';
 import { EXPERIENCE_DATA } from '@/app/utils/data.utils';
+import { render, screen } from '@testing-library/react';
 
 const CONTENT_DATA = EXPERIENCE_DATA[0];
 

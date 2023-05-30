@@ -1,6 +1,5 @@
 import Hero from '@/app/sections/Hero';
 import { RESUME_URL } from '@/app/utils/data.utils';
-import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 
 describe('Hero section', () => {

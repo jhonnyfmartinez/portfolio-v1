@@ -1,6 +1,5 @@
-import { render, screen } from '@testing-library/react';
 import SectionHeading from '@/app/components/SectionHeading';
-import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
 import { TbAlien } from 'react-icons/tb';
 
 describe('SectionHeading component', () => {

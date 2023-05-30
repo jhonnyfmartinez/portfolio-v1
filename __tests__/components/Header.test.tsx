@@ -1,6 +1,5 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import Header from '@/app/components/Header';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 describe('Header', () => {
   beforeEach(() => {
