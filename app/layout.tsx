@@ -1,9 +1,9 @@
-import { PropsWithChildren } from 'react';
 import { Arvo, Source_Code_Pro } from 'next/font/google';
-import Header from './components/Header';
-import './styles/index.css';
+import { PropsWithChildren } from 'react';
 import Footer from './components/Footer';
+import Header from './components/Header';
 import SocialLinks from './components/SocialLinks';
+import './styles/index.css';
 
 const arvo = Arvo({
   weight: ['400', '700'],

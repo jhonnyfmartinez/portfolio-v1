@@ -1,7 +1,6 @@
-import React from 'react';
-import { RESUME_URL, SOCIAL_MEDIA_DATA } from '../utils/data.utils';
 import Link from 'next/link';
 import { FaFileDownload } from 'react-icons/fa';
+import { RESUME_URL, SOCIAL_MEDIA_DATA } from '../utils/data.utils';
 
 type SocialLinksProps = { className?: string };
 

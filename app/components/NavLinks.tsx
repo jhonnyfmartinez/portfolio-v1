@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { PropsWithChildren } from 'react';
-import { TbUser, TbFolder, TbDeviceLaptop, TbMail } from 'react-icons/tb';
+import { TbDeviceLaptop, TbFolder, TbMail, TbUser } from 'react-icons/tb';
 
 type NavLinkProps = {
   icon: (props: { className: string }) => React.ReactElement;

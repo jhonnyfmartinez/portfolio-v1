@@ -1,7 +1,7 @@
 // istanbul ignore file
-import { FaLinkedin, FaTwitter, FaGithub, FaStackOverflow, FaFileDownload } from 'react-icons/fa';
-import { ExperienceInterface, ProjectInterface } from '../interfaces/project.interface';
 import { IconType } from 'react-icons';
+import { FaGithub, FaLinkedin, FaStackOverflow, FaTwitter } from 'react-icons/fa';
+import { ExperienceInterface, ProjectInterface } from '../interfaces/project.interface';
 
 export const RESUME_URL = 'https://www.jfmartinez.dev/resume.pdf';
 

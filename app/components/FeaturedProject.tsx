@@ -1,6 +1,6 @@
+import { ProjectInterface } from '@/app/interfaces/project.interface';
 import clsx from 'clsx';
 import Image from 'next/image';
-import { ProjectInterface } from '@/app/interfaces/project.interface';
 import TechLinks from './TechLinks';
 
 type FeaturedProjectProps = ProjectInterface & {

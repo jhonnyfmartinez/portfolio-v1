@@ -1,12 +1,12 @@
 // istanbul ignore file
 'use client';
 
-import { useState } from 'react';
 import SectionHeading from '@/app/components/SectionHeading';
-import { TbDeviceLaptop } from 'react-icons/tb';
-import Tabs from '@/app/components/Tabs';
 import TabContent from '@/app/components/TabContent';
+import Tabs from '@/app/components/Tabs';
 import { EXPERIENCE_DATA } from '@/app/utils/data.utils';
+import { useState } from 'react';
+import { TbDeviceLaptop } from 'react-icons/tb';
 
 const Experience = () => {
   const [selectedTab, setSelectedTab] = useState(0);
