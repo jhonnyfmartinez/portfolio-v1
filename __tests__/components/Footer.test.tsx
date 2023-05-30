@@ -25,6 +25,6 @@ describe('Footer', () => {
     const links = screen.getAllByRole('listitem');
 
     expect(socialLinks).toBeInTheDocument();
-    expect(links).toHaveLength(SOCIAL_MEDIA_DATA.length);
+    expect(links).toHaveLength(SOCIAL_MEDIA_DATA.length + 1); // +1 for resume link
   });
 });
