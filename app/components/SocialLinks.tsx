@@ -1,5 +1,5 @@
 import React from 'react';
-import { SOCIAL_MEDIA_DATA } from '../utils/data.utils';
+import { RESUME_URL, SOCIAL_MEDIA_DATA } from '../utils/data.utils';
 import Link from 'next/link';
 import { FaFileDownload } from 'react-icons/fa';
 
@@ -25,10 +25,11 @@ const SocialLinks = (props: SocialLinksProps) => (
     })}
     <li>
       <Link
-        href="/resume.pdf"
+        href={RESUME_URL}
         target="_blank"
         className="hover:text-primary"
         aria-label="Download Resume"
+        rel="noopener roreferrer"
         download>
         <FaFileDownload className="text-xl sm:text-2xl" title="Download Resume" />
       </Link>

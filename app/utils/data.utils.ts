@@ -3,6 +3,8 @@ import { FaLinkedin, FaTwitter, FaGithub, FaStackOverflow, FaFileDownload } from
 import { ExperienceInterface, ProjectInterface } from '../interfaces/project.interface';
 import { IconType } from 'react-icons';
 
+export const RESUME_URL = 'https://www.jfmartinez.dev/resume.pdf';
+
 export const EXPERIENCE_DATA: ExperienceInterface[] = [
   {
     title: 'Pearlii',
