@@ -166,9 +166,4 @@ export const SOCIAL_MEDIA_DATA: { icon: IconType; link: string; label: string }[
     icon: FaStackOverflow,
     label: 'StackOverflow',
   },
-  {
-    link: '/resume.pdf',
-    icon: FaFileDownload,
-    label: 'Download Resume',
-  },
 ];
