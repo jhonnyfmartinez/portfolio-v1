@@ -13,7 +13,6 @@ const SocialLinks = (props: SocialLinksProps) => (
           <Link
             href={link}
             target="_blank"
-            className="hover:text-primary"
             aria-label={label}
             rel="noreferrer"
             download={label === 'Download Resume'}>
@@ -26,7 +25,6 @@ const SocialLinks = (props: SocialLinksProps) => (
       <Link
         href={RESUME_URL}
         target="_blank"
-        className="hover:text-primary"
         aria-label="Download Resume"
         rel="noopener roreferrer"
         download>
