@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1](https://github.com/jhonny9550/portfolio-v1/compare/v1.0.0...v1.0.1) (2023-05-31)
+
+
+### Bug Fixes
+
+* extracting resume link to global const ([04ec089](https://github.com/jhonny9550/portfolio-v1/commit/04ec08900bb3d64da4977c33bfc8a59dd22bcbc0))
+* refactor SocialLinks component ([f0f0931](https://github.com/jhonny9550/portfolio-v1/commit/f0f09310345b2f0a3794a769e0f6152ac1ec5f05))
+
 ## 1.0.0 (2023-05-29)
 
 
