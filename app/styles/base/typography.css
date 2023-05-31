@@ -51,4 +51,8 @@
   h5 {
     @apply text-headings;
   }
+
+  a {
+    @apply hover:text-primary;
+  }
 }

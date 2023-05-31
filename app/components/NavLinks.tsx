@@ -11,9 +11,7 @@ const NavLink = (props: PropsWithChildren<NavLinkProps>) => {
   const Icon = props.icon;
   return (
     <li>
-      <Link
-        className="flex flex-col items-center gap-2 align-middle hover:text-primary sm:flex-row"
-        href={props.href}>
+      <Link className="flex flex-col items-center gap-2 align-middle sm:flex-row" href={props.href}>
         <Icon className="text-primary text-lg xl:text-xl" />
         {props.children}
       </Link>
