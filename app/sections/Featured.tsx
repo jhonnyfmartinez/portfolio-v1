@@ -1,8 +1,8 @@
 // istanbul ignore file
-import SectionHeading from '@/app/components/SectionHeading';
-import { TbFolder } from 'react-icons/tb';
-import { FEATURED_PROJECTS_DATA } from '@/app/utils/data.utils';
 import FeaturedProject from '@/app/components/FeaturedProject';
+import SectionHeading from '@/app/components/SectionHeading';
+import { FEATURED_PROJECTS_DATA } from '@/app/utils/data.utils';
+import { TbFolder } from 'react-icons/tb';
 
 const Featured = () => (
   <section className="section-container" id="projects">

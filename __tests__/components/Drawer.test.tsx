@@ -1,6 +1,5 @@
-import { render, screen } from '@testing-library/react';
 import Drawer from '@/app/components/Drawer';
-import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
 
 describe('Drawer', () => {
   it('Should render drawer inside screen', () => {

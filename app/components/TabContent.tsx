@@ -8,7 +8,7 @@ export type TabContentProps = {
 
 const TabContent = (props: TabContentProps) => (
   <article hidden={props.hidden}>
-    <h5 className="text-headings">
+    <h5>
       {props.position}
       <span className="text-primary ml-2">@ {props.company}</span>
     </h5>

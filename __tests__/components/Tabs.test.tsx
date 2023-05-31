@@ -1,7 +1,6 @@
-import { fireEvent, render, screen } from '@testing-library/react';
 import Tabs from '@/app/components/Tabs';
-import '@testing-library/jest-dom';
 import { EXPERIENCE_DATA } from '@/app/utils/data.utils';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 describe('Tabs component', () => {
   it('should render tabs', () => {

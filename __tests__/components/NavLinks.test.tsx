@@ -1,6 +1,5 @@
-import { render, screen } from '@testing-library/react';
 import NavLinks from '@/app/components/NavLinks';
-import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
 
 describe('NavLinks', () => {
   it('should render 4 nav links', () => {

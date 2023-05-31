@@ -1,7 +1,9 @@
 // istanbul ignore file
-import { FaLinkedin, FaTwitter, FaGithub, FaStackOverflow, FaFileDownload } from 'react-icons/fa';
-import { ExperienceInterface, ProjectInterface } from '../interfaces/project.interface';
 import { IconType } from 'react-icons';
+import { FaGithub, FaLinkedin, FaStackOverflow, FaTwitter } from 'react-icons/fa';
+import { ExperienceInterface, ProjectInterface } from '../interfaces/project.interface';
+
+export const RESUME_URL = 'https://www.jfmartinez.dev/resume.pdf';
 
 export const EXPERIENCE_DATA: ExperienceInterface[] = [
   {
@@ -165,10 +167,5 @@ export const SOCIAL_MEDIA_DATA: { icon: IconType; link: string; label: string }[
     link: 'https://stackoverflow.com/users/7296576/jhonny-mart%c3%adnez',
     icon: FaStackOverflow,
     label: 'StackOverflow',
-  },
-  {
-    link: '/resume.pdf',
-    icon: FaFileDownload,
-    label: 'Download Resume',
   },
 ];

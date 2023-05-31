@@ -6,7 +6,7 @@ type ListIconLinkProps = { href: string; icon: React.ReactElement };
 
 const ListIconLink = (props: ListIconLinkProps) => (
   <li hidden={!props.href}>
-    <Link className="text-2xl hover:text-primary" href={props.href} target="_blank">
+    <Link className="text-2xl" href={props.href} target="_blank">
       {props.icon}
     </Link>
   </li>

@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
 import Hero from '@/app/sections/Hero';
-import '@testing-library/jest-dom';
+import { RESUME_URL } from '@/app/utils/data.utils';
+import { render, screen } from '@testing-library/react';
 
 describe('Hero section', () => {
   it('should render hero section', () => {
@@ -22,7 +22,7 @@ describe('Hero section', () => {
 
     const downloadResumeButton = screen.getByText('Download my resume');
 
-    expect(downloadResumeButton).toHaveAttribute('href', '/resume.pdf');
+    expect(downloadResumeButton).toHaveAttribute('href', RESUME_URL);
     expect(downloadResumeButton).toHaveAttribute('target', '_blank');
     expect(downloadResumeButton).toHaveAttribute('download');
   });

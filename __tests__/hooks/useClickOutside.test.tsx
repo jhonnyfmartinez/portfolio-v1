@@ -1,6 +1,5 @@
-import { fireEvent, render, renderHook } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import useOnClickOutside from '@/app/hooks/useClickOutside';
+import { fireEvent, render, renderHook } from '@testing-library/react';
 import { createRef } from 'react';
 
 describe('useClickOutside', () => {

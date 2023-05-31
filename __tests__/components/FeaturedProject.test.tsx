@@ -1,7 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import FeaturedProject from '@/app/components/FeaturedProject';
 import { ProjectInterface } from '@/app/interfaces/project.interface';
+import { render, screen } from '@testing-library/react';
 
 describe('FeaturedProject', () => {
   const project: ProjectInterface = {

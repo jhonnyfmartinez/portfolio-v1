@@ -1,7 +1,6 @@
-import { render, screen } from '@testing-library/react';
 import About from '@/app/sections/About';
-import '@testing-library/jest-dom';
 import { TECH_STACK_DATA } from '@/app/utils/data.utils';
+import { render, screen } from '@testing-library/react';
 
 describe('About section', () => {
   it('should render about section', () => {

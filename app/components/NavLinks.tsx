@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { PropsWithChildren } from 'react';
-import { TbUser, TbFolder, TbDeviceLaptop, TbMail } from 'react-icons/tb';
+import { TbDeviceLaptop, TbFolder, TbMail, TbUser } from 'react-icons/tb';
 
 type NavLinkProps = {
   icon: (props: { className: string }) => React.ReactElement;
@@ -11,9 +11,7 @@ const NavLink = (props: PropsWithChildren<NavLinkProps>) => {
   const Icon = props.icon;
   return (
     <li>
-      <Link
-        className="flex flex-col items-center gap-2 align-middle hover:text-primary sm:flex-row"
-        href={props.href}>
+      <Link className="flex flex-col items-center gap-2 align-middle sm:flex-row" href={props.href}>
         <Icon className="text-primary text-lg xl:text-xl" />
         {props.children}
       </Link>

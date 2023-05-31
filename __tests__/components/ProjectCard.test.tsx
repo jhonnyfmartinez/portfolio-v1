@@ -1,7 +1,6 @@
-import { render, screen } from '@testing-library/react';
 import ProjectCard from '@/app/components/ProjectCard';
-import '@testing-library/jest-dom';
 import { PROJECTS_DATA } from '@/app/utils/data.utils';
+import { render, screen } from '@testing-library/react';
 
 describe('ProjectCard component', () => {
   it('should render project card', () => {

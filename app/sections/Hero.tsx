@@ -1,4 +1,5 @@
 import Button from '@/app/components/Button';
+import { RESUME_URL } from '../utils/data.utils';
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
         currently on the lookout for my next challenge, where I can use my skills to make a positive
         impact.
       </p>
-      <Button className="mt-[46px]" href="/resume.pdf" target="_blank" download>
+      <Button className="mt-[46px]" href={RESUME_URL} target="_blank" download>
         Download my resume
       </Button>
     </section>

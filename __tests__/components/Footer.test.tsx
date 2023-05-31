@@ -1,7 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import Footer from '@/app/components/Footer';
 import { SOCIAL_MEDIA_DATA } from '@/app/utils/data.utils';
+import { render, screen } from '@testing-library/react';
 
 describe('Footer', () => {
   beforeEach(() => {
@@ -25,6 +24,6 @@ describe('Footer', () => {
     const links = screen.getAllByRole('listitem');
 
     expect(socialLinks).toBeInTheDocument();
-    expect(links).toHaveLength(SOCIAL_MEDIA_DATA.length);
+    expect(links).toHaveLength(SOCIAL_MEDIA_DATA.length + 1); // +1 for resume link
   });
 });

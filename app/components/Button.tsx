@@ -13,7 +13,7 @@ type ButtonProps = {
 };
 
 const buttonColors = {
-  primary: 'border-[2px] border-solid border-primary rounded-lg hover:text-primary',
+  primary: 'border-[2px] border-solid border-primary rounded-lg',
 };
 
 const Button = ({ color = 'primary', ...props }: PropsWithChildren<ButtonProps>) => {

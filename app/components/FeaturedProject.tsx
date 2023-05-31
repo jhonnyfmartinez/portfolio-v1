@@ -1,6 +1,6 @@
+import { ProjectInterface } from '@/app/interfaces/project.interface';
 import clsx from 'clsx';
 import Image from 'next/image';
-import { ProjectInterface } from '@/app/interfaces/project.interface';
 import TechLinks from './TechLinks';
 
 type FeaturedProjectProps = ProjectInterface & {
@@ -17,8 +17,8 @@ const FeaturedProject = (props: FeaturedProjectProps) => {
       ])}>
       <div className="xl:flex-grow xl:min-w-[658px]">
         <div className="flex flex-col justify-between gap-2 xl:flex-row xl:items-end">
-          <div className="text-headings">
-            <p className="font-mono small-copy">{props.type}</p>
+          <div>
+            <span className="font-mono small-copy">{props.type}</span>
             <h5>{props.name}</h5>
           </div>
           <ul className="tech-list">
