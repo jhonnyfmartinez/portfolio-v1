@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/jhonny9550/portfolio-v1/compare/v1.0.1...v1.1.0) (2023-06-03)
+
+
+### Features
+
+* page metadata included ([abbbad9](https://github.com/jhonny9550/portfolio-v1/commit/abbbad9dfbd7eee156354a5e9637d2caeef9665d)), closes [#39](https://github.com/jhonny9550/portfolio-v1/issues/39)
+
 ## [1.0.1](https://github.com/jhonny9550/portfolio-v1/compare/v1.0.0...v1.0.1) (2023-05-31)
 
 ### Bug Fixes
