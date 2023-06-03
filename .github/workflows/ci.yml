@@ -17,12 +17,12 @@ jobs:
     if: ${{ !contains('release-please', github.event.pull_request.title) }}
     steps:
       - name: Begin CI...
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Use Node ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-${{ env.NODE_VERSION }}-modules-${{ hashFiles('**/package-lock.json') }}
@@ -37,8 +37,8 @@ jobs:
     needs: [install]
     steps:
       - name: Begin CI...
-        uses: actions/checkout@v2
-      - uses: actions/cache@v2
+        uses: actions/checkout@v3
+      - uses: actions/cache@v3
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-${{ env.NODE_VERSION }}-modules-${{ hashFiles('**/package-lock.json') }}
@@ -53,8 +53,8 @@ jobs:
     needs: [install]
     steps:
       - name: Begin CI...
-        uses: actions/checkout@v2
-      - uses: actions/cache@v2
+        uses: actions/checkout@v3
+      - uses: actions/cache@v3
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-${{ env.NODE_VERSION }}-modules-${{ hashFiles('**/package-lock.json') }}
@@ -69,8 +69,8 @@ jobs:
     needs: [install]
     steps:
       - name: Begin CI...
-        uses: actions/checkout@v2
-      - uses: actions/cache@v2
+        uses: actions/checkout@v3
+      - uses: actions/cache@v3
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-${{ env.NODE_VERSION }}-modules-${{ hashFiles('**/package-lock.json') }}
