@@ -14,7 +14,7 @@ env:
 jobs:
   install:
     runs-on: ubuntu-latest
-    if: '!contains("release-please", github.event.pull_request.title)'
+    if: ${{ !contains('release-please', github.event.pull_request.title) }}
     steps:
       - name: Begin CI...
         uses: actions/checkout@v2
@@ -33,7 +33,7 @@ jobs:
 
   lint:
     runs-on: ubuntu-latest
-    if: '!contains("release-please", github.event.pull_request.title)'
+    if: ${{ !contains('release-please', github.event.pull_request.title) }}
     needs: [install]
     steps:
       - name: Begin CI...
@@ -49,7 +49,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    if: '!contains("release-please", github.event.pull_request.title)'
+    if: ${{ !contains('release-please', github.event.pull_request.title) }}
     needs: [install]
     steps:
       - name: Begin CI...
@@ -65,7 +65,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    if: '!contains("release-please", github.event.pull_request.title)'
+    if: ${{ !contains('release-please', github.event.pull_request.title) }}
     needs: [install]
     steps:
       - name: Begin CI...
