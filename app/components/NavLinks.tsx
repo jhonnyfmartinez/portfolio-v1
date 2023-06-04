@@ -20,16 +20,16 @@ const NavLink = (props: PropsWithChildren<NavLinkProps>) => {
 
 const NavLinks = (props: { className?: string }) => (
   <ul className={props.className}>
-    <NavLink icon={TbUser} href="#about">
+    <NavLink icon={TbUser} href="/#about">
       About
     </NavLink>
-    <NavLink icon={TbDeviceLaptop} href="#experience">
+    <NavLink icon={TbDeviceLaptop} href="/#experience">
       Experience
     </NavLink>
-    <NavLink icon={TbFolder} href="#projects">
+    <NavLink icon={TbFolder} href="/#projects">
       Projects
     </NavLink>
-    <NavLink icon={TbMail} href="#contact">
+    <NavLink icon={TbMail} href="/#contact">
       Contact
     </NavLink>
   </ul>
