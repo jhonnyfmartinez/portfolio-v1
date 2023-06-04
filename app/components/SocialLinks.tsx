@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { FaFileDownload } from 'react-icons/fa';
-import { RESUME_URL, SOCIAL_MEDIA_DATA } from '../utils/data.utils';
+import { SOCIAL_MEDIA_DATA } from '../utils/data.utils';
 
 type SocialLinksProps = { className?: string };
 
@@ -23,7 +23,7 @@ const SocialLinks = (props: SocialLinksProps) => (
     })}
     <li>
       <Link
-        href={RESUME_URL}
+        href={process.env.resumeUrl || ''}
         target="_blank"
         aria-label="Download Resume"
         rel="noopener roreferrer"
