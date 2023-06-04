@@ -1,4 +1,5 @@
 import Button from '@/app/components/Button';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -11,10 +12,17 @@ export default function Hero() {
         <span className="block text-text">I craft software solutions.</span>
       </h1>
       <p className="sm:max-w-[450px] xl:max-w-[500px]">
-        As a <span className="text-primary">Software Engineer</span>, I&apos;m passionate about
-        creating unique products and digital experiences that solve real-world problems. I&apos;m
-        currently on the lookout for my next challenge, where I can use my skills to make a positive
-        impact.
+        As a Software Engineer, I&apos;m passionate about creating unique products and digital
+        experiences that solve real-world problems. I&apos;m starting my journey at{' '}
+        <Link
+          href="https://sitemate.com/au/"
+          rel="noreferrer noopener"
+          target="_blank"
+          className="body-copy text-primary hover:underline">
+          Sitemate
+        </Link>{' '}
+        as a Fullstack Engineer, building a SaaS platform with instant & affordable no-code
+        integrations and automation.
       </p>
       <Button className="mt-[46px]" href={process.env.resumeUrl || ''} target="_blank" download>
         Download my resume
