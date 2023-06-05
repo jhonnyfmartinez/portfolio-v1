@@ -1,16 +1,19 @@
 'use client';
 
 import useOnClickOutside from '@/app/hooks/useClickOutside';
+import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { TbMenu2, TbX } from 'react-icons/tb';
+import { ScrollDirection, useScrollDirection } from '../hooks/useScrollDirection';
 import Drawer from './Drawer';
 import NavLinks from './NavLinks';
 
 export default function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const drawerWraperRef = useRef(null);
+  const scrollDirection = useScrollDirection();
 
   const handleToggleDrawer = useCallback(() => {
     setDrawerOpen(v => !v);
@@ -27,7 +30,7 @@ export default function Header() {
   useOnClickOutside(drawerWraperRef, setDrawerOpen.bind(null, false));
 
   return (
-    <header className="fixed top-0 inset-x-0 z-30 h-20 bg-background bg-opacity-80 drop-shadow-md backdrop-blur-[10px] flex items-center">
+    <header className={clsx(['header', { scrolled: scrollDirection === ScrollDirection.down }])}>
       <nav className="w-full flex items-center gap-8 px-8 xl:px-16">
         <Link
           className="transition-transform max-w-[50px] hover:scale-110"
