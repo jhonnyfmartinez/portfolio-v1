@@ -15,7 +15,7 @@ const FeaturedProject = (props: FeaturedProjectProps) => {
         'flex flex-col xl:flex-row xl:items-end',
         { 'xl:flex-row-reverse': isOdd },
       ])}>
-      <div className="xl:flex-grow xl:min-w-[658px]">
+      <div className="xl:flex-grow xl:max-w-fit">
         <div className="flex flex-col justify-between gap-2 xl:flex-row xl:items-end">
           <div>
             <span className="font-mono small-copy">{props.type}</span>
@@ -31,7 +31,7 @@ const FeaturedProject = (props: FeaturedProjectProps) => {
             ))}
           </ul>
         </div>
-        <div className="mt-4 relative overflow-hidden rounded-lg">
+        <div className="mt-4 relative overflow-hidden rounded-lg w-fit">
           <Image src={props.image} alt="Featured project" width={658} height={350} />
           <div className="absolute z-10 inset-0 h-full w-full bg-primary opacity-60" />
         </div>
