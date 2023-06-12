@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section
-      className="section-container xl:px-[124px] xl:py-28 xl:gap-4"
+      className="section-container xl:px-[124px] xl:py-28 xl:gap-4 opacity-0 animate-pop-in animation-delay-[1800ms]"
       data-testid="hero-section">
       <pre className="text-accent">Hello world! 👋 My name is</pre>
       <h1 className="text-white hero-text leading-tight">

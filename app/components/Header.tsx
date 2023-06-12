@@ -33,7 +33,7 @@ export default function Header() {
     <header className={clsx(['header', { scrolled: scrollDirection === ScrollDirection.down }])}>
       <nav className="w-full flex items-center gap-8 px-8 xl:px-16">
         <Link
-          className="transition-transform max-w-[50px] hover:scale-110"
+          className="transition-transform max-w-[50px] opacity-0 animate-pop-in animation-delay-[800ms] hover:scale-110"
           href="/"
           data-testid="root-link">
           <Image src="/logo.svg" alt="Vercel Logo" priority height={49} width={69} />

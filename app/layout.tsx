@@ -28,7 +28,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body suppressHydrationWarning={true}>
         <Header />
         <main className="pt-20 flex-grow">{children}</main>
-        <div className="floating-links">
+        <div className="floating-links opacity-0 animate-pop-in animation-delay-[2200ms]">
           <SocialLinks className="flex-col py-8 px-5 gap-6" />
         </div>
         <Footer />
