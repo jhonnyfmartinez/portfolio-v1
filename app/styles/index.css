@@ -30,12 +30,17 @@
     display: flex;
     flex-direction: column;
   }
+}
 
-  /* When drawer open apply blur to main elements */
-  body.blur main > * {
-    filter: blur(5px) brightness(0.7);
-    transition: var(--transition);
-    pointer-events: none;
-    user-select: none;
-  }
+/* Lock scroll when drawer open */
+html.blur {
+  overflow: hidden;
+}
+
+/* When drawer open apply blur to main elements */
+html.blur main > * {
+  filter: blur(5px) brightness(0.7);
+  transition: var(--transition);
+  pointer-events: none;
+  user-select: none;
 }

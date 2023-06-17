@@ -12,7 +12,7 @@ const FeaturedProject = (props: FeaturedProjectProps) => {
   return (
     <article
       className={clsx([
-        'flex flex-col xl:flex-row xl:items-end',
+        'flex flex-col items-center xl:flex-row xl:items-end',
         { 'xl:flex-row-reverse': isOdd },
       ])}>
       <div className="xl:flex-grow xl:max-w-fit">
@@ -38,7 +38,9 @@ const FeaturedProject = (props: FeaturedProjectProps) => {
       </div>
       <div
         className={clsx([
-          'mb-4 bg-paper rounded-lg p-4 z-10 mx-8 translate-y-[-60px] xl:translate-y-0 xl:w-[377px]',
+          'mb-4 bg-paper rounded-lg p-4 z-10 mx-8 translate-y-[-60px]',
+          'sm:w-[420px] sm:mx-auto',
+          'xl:mx-0 xl:translate-y-0',
           isOdd ? 'xl:translate-x-[120px]' : 'xl:translate-x-[-120px]',
         ])}>
         <p className="small-copy">{props.description}</p>

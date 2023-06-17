@@ -1,8 +1,10 @@
 // istanbul ignore file
+'use client';
 import ProjectCard from '@/app/components/ProjectCard';
 import SectionHeading from '@/app/components/SectionHeading';
 import { PROJECTS_DATA } from '@/app/utils/data.utils';
 import { TbFolder } from 'react-icons/tb';
+import { withEntranceAnimation } from '../components/EntranceWrapper';
 
 const Projects = () => (
   <section className="section-container sm:px-16">
@@ -15,4 +17,4 @@ const Projects = () => (
   </section>
 );
 
-export default Projects;
+export default withEntranceAnimation(Projects);

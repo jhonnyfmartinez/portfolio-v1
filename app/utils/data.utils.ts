@@ -9,7 +9,11 @@ export const EXPERIENCE_DATA: ExperienceInterface[] = [
     content: {
       position: 'Fullstack Engineer',
       period: 'June 2023 - Present',
-      items: ['Will update this soon'],
+      items: [
+        'Responsible for the development of third party API integrations.',
+        'Deliver high quality production code to arrange the company’s needs.',
+        'Collaborate with product managers and designers to create seamless no-code experiences for company’s users.',
+      ],
     },
   },
   {

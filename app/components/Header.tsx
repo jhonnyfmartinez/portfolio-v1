@@ -21,9 +21,9 @@ export default function Header() {
 
   useEffect(() => {
     if (drawerOpen) {
-      document.body.classList.add('blur');
+      document.documentElement.classList.add('blur');
     } else {
-      document.body.classList.remove('blur');
+      document.documentElement.classList.remove('blur');
     }
   }, [drawerOpen]);
 

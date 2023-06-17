@@ -1,10 +1,13 @@
+'use client';
+
 import SectionHeading from '@/app/components/SectionHeading';
 import { TECH_STACK_DATA } from '@/app/utils/data.utils';
 import Image from 'next/image';
 import { TbUser } from 'react-icons/tb';
+import { withEntranceAnimation } from '../components/EntranceWrapper';
 
 const About = () => (
-  <section className="section-container" data-testid="about-section" id="about">
+  <div className="section-container" data-testid="about-section" id="about">
     <SectionHeading icon={TbUser}>About me</SectionHeading>
     <div className="flex flex-col items-center gap-20 xl:flex-row">
       <div className="flex flex-col gap-6">
@@ -37,7 +40,7 @@ const About = () => (
         className="max-w-[250px] xl:max-w-none"
       />
     </div>
-  </section>
+  </div>
 );
 
-export default About;
+export default withEntranceAnimation(About);
