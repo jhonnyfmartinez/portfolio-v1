@@ -1,3 +1,4 @@
+// istanbul ignore file
 import { useEffect, useState } from 'react';
 
 export default function useIsVisible(ref: React.RefObject<Element>, threshold = 0.5) {

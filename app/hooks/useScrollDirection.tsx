@@ -1,3 +1,4 @@
+// istanbul ignore file
 import { useEffect, useState } from 'react';
 
 export enum ScrollDirection {

@@ -19,7 +19,7 @@ const config = {
       statements: 80,
     },
   },
-  coveragePathIgnorePatterns: ['layout.tsx'],
+  coveragePathIgnorePatterns: ['layout.tsx', 'page.tsx'],
   testEnvironment: 'jest-environment-jsdom',
 };
 

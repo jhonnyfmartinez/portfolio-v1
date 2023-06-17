@@ -1,7 +1,7 @@
 import Button from '@/app/components/Button';
 import Link from 'next/link';
 
-export const Hero = () => (
+const Hero = () => (
   <section
     className="section-container xl:px-[124px] xl:py-28 xl:gap-4 opacity-0 animate-pop-in animation-delay-[1800ms]"
     data-testid="hero-section">
