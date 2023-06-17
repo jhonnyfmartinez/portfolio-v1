@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1](https://github.com/jhonny9550/portfolio-v1/compare/v1.2.0...v1.2.1) (2023-06-17)
+
+
+### Bug Fixes
+
+* closing drawer on sidebar link click ([082e606](https://github.com/jhonny9550/portfolio-v1/commit/082e606ff1f3cac46bb3b72667f2890d4f9c122d)), closes [#63](https://github.com/jhonny9550/portfolio-v1/issues/63)
+
 ## [1.2.0](https://github.com/jhonny9550/portfolio-v1/compare/v1.1.0...v1.2.0) (2023-06-17)
 
 
