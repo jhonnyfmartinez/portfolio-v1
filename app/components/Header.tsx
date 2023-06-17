@@ -43,7 +43,10 @@ export default function Header() {
           ref={drawerWraperRef}
           className="flex-grow flex justify-end items-center sm:hidden"
           data-testid="wrapper">
-          <button className="text-3xl" onClick={handleToggleDrawer} data-testid="toggle-button">
+          <button
+            className="text-3xl opacity-0 animate-pop-in animation-delay-[1000ms]"
+            onClick={handleToggleDrawer}
+            data-testid="toggle-button">
             {drawerOpen ? <TbX data-testname="x" /> : <TbMenu2 data-testname="menu" />}
           </button>
           <Drawer open={drawerOpen} />
