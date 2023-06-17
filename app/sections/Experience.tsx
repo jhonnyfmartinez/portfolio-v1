@@ -7,6 +7,7 @@ import Tabs from '@/app/components/Tabs';
 import { EXPERIENCE_DATA } from '@/app/utils/data.utils';
 import { useState } from 'react';
 import { TbDeviceLaptop } from 'react-icons/tb';
+import { withEntranceAnimation } from '../components/EntranceWrapper';
 
 const Experience = () => {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -34,4 +35,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default withEntranceAnimation(Experience);

@@ -1,5 +1,6 @@
 const colors = require('tailwindcss/colors');
 const { fontFamily } = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -28,8 +29,37 @@ module.exports = {
       sans: ['var(--font-arvo)', ...fontFamily.sans],
       mono: ['var(--font-scp)', ...fontFamily.mono],
     },
-    extend: {},
+    extend: {
+      animation: {
+        'pop-in': 'pop-in 0.6s ease-out 0s 1 normal forwards',
+      },
+      keyframes: {
+        'pop-in': {
+          '0%': {
+            opacity: 0,
+            transform: 'scale(0.8)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'scale(1)',
+          },
+        },
+      },
+    },
   },
   blocklist: ['blur'],
-  plugins: [],
+  plugins: [
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          'animation-delay': value => ({
+            'animation-delay': value,
+          }),
+        },
+        {
+          values: theme('transitionDelay'),
+        },
+      );
+    }),
+  ],
 };

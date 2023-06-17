@@ -27,10 +27,10 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang="en" className={`${arvo.variable} ${sourceCodePro.variable}`}>
       <body suppressHydrationWarning={true}>
         <Header />
-        <main className="pt-20">{children}</main>
-        <div className="floating-links">
+        <main className="pt-20 flex-grow">{children}</main>
+        <div className="floating-links opacity-0 animate-pop-in animation-delay-[2200ms]">
           <SocialLinks className="flex-col py-8 px-5 gap-6" />
-        </div>{' '}
+        </div>
         <Footer />
       </body>
     </html>

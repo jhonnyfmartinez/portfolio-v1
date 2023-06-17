@@ -30,7 +30,7 @@ describe('Header', () => {
 
     fireEvent.click(drawerToggleButton);
 
-    expect(document.body).toHaveClass('blur');
+    expect(document.documentElement).toHaveClass('blur');
   });
 
   it('Should close drawer if click outside', async () => {

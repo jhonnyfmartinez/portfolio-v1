@@ -20,6 +20,7 @@ const metaOgImages = [
 ];
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://jfmartinez.dev/'),
   title: metaTitle,
   description: metaDescription,
   keywords: [

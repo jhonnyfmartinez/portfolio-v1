@@ -8,6 +8,7 @@
 @import 'base/typography.css';
 
 /* Components */
+@import 'components/header.css';
 @import 'components/drawer.css';
 @import 'components/list.css';
 @import 'components/tabs.css';
@@ -18,8 +19,26 @@
 @import 'utilities/flex.css';
 @import 'utilities/scroll.css';
 
+@layer base {
+  html,
+  body {
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Lock scroll when drawer open */
+html.blur {
+  overflow: hidden;
+}
+
 /* When drawer open apply blur to main elements */
-body.blur main > * {
+html.blur main > * {
   filter: blur(5px) brightness(0.7);
   transition: var(--transition);
   pointer-events: none;

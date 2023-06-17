@@ -28,7 +28,7 @@ const Button = ({ color = 'primary', ...props }: PropsWithChildren<ButtonProps>)
       href={props.href}
       target={props.target}
       download={props.download}
-      rel="noopener roreferrer">
+      rel="noopener noreferrer">
       {props.children}
     </Link>
   );

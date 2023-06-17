@@ -1,0 +1,11 @@
+@layer components {
+  .header {
+    height: var(--header-height);
+    @apply fixed top-0 inset-x-0 z-30 h-20 bg-background bg-opacity-80 drop-shadow-md backdrop-blur-[10px] flex items-center transition-all duration-300;
+  }
+
+  .header.scrolled {
+    height: var(--header-scroll-height);
+    transform: translateY(calc(var(--header-scroll-height) * -1));
+  }
+}

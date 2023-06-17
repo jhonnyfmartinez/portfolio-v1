@@ -3,9 +3,19 @@ import { IconType } from 'react-icons';
 import { FaGithub, FaLinkedin, FaStackOverflow, FaTwitter } from 'react-icons/fa';
 import { ExperienceInterface, ProjectInterface } from '../interfaces/project.interface';
 
-export const RESUME_URL = 'https://www.jfmartinez.dev/resume.pdf';
-
 export const EXPERIENCE_DATA: ExperienceInterface[] = [
+  {
+    title: 'Sitemate',
+    content: {
+      position: 'Fullstack Engineer',
+      period: 'June 2023 - Present',
+      items: [
+        'Responsible for the development of third party API integrations.',
+        'Deliver high quality production code to arrange the company’s needs.',
+        'Collaborate with product managers and designers to create seamless no-code experiences for company’s users.',
+      ],
+    },
+  },
   {
     title: 'Pearlii',
     content: {
@@ -43,18 +53,18 @@ export const EXPERIENCE_DATA: ExperienceInterface[] = [
       ],
     },
   },
-  {
-    title: 'OL Software',
-    content: {
-      position: 'Fullstack Developer',
-      period: 'September 2019 - December 2019',
-      items: [
-        'Refactored the source code of the company’s latest product to improve the performance of the app.',
-        'Implemented new features to the company’s product to improve the user experience.',
-        'Perform consulting services to the company’s clients to improve their products.',
-      ],
-    },
-  },
+  // {
+  //   title: 'OL Software',
+  //   content: {
+  //     position: 'Fullstack Developer',
+  //     period: 'September 2019 - December 2019',
+  //     items: [
+  //       'Refactored the source code of the company’s latest product to improve the performance of the app.',
+  //       'Implemented new features to the company’s product to improve the user experience.',
+  //       'Perform consulting services to the company’s clients to improve their products.',
+  //     ],
+  //   },
+  // },
   {
     title: 'Rebus',
     content: {

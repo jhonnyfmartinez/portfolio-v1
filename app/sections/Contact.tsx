@@ -1,6 +1,8 @@
+'use client';
 import Button from '@/app/components/Button';
 import SectionHeading from '@/app/components/SectionHeading';
 import { TbMail } from 'react-icons/tb';
+import { withEntranceAnimation } from '../components/EntranceWrapper';
 
 const Contact = () => (
   <section className="section-container sm:gap-8" id="contact">
@@ -19,4 +21,4 @@ const Contact = () => (
   </section>
 );
 
-export default Contact;
+export default withEntranceAnimation(Contact);

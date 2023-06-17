@@ -1,8 +1,10 @@
 // istanbul ignore file
+'use client';
 import FeaturedProject from '@/app/components/FeaturedProject';
 import SectionHeading from '@/app/components/SectionHeading';
 import { FEATURED_PROJECTS_DATA } from '@/app/utils/data.utils';
 import { TbFolder } from 'react-icons/tb';
+import { withEntranceAnimation } from '../components/EntranceWrapper';
 
 const Featured = () => (
   <section className="section-container" id="projects">
@@ -15,4 +17,4 @@ const Featured = () => (
   </section>
 );
 
-export default Featured;
+export default withEntranceAnimation(Featured, 0.3);
