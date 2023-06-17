@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/jhonny9550/portfolio-v1/compare/v1.1.0...v1.2.0) (2023-06-17)
+
+
+### Features
+
+* adding custom tailwind plugin for animation delay property ([b6339d1](https://github.com/jhonny9550/portfolio-v1/commit/b6339d12433758dd07e1c98c30c1869a358a7581))
+* Experience Data updated ([ea98886](https://github.com/jhonny9550/portfolio-v1/commit/ea988868f44a5fe54290eb1ff8bb4695a2a275e6))
+* header scroll animation added ([e12aeef](https://github.com/jhonny9550/portfolio-v1/commit/e12aeefce3fca02fc04997ba44c861117968f89d))
+* hero animations added ([b6339d1](https://github.com/jhonny9550/portfolio-v1/commit/b6339d12433758dd07e1c98c30c1869a358a7581))
+* Hero desc updated ([ea98886](https://github.com/jhonny9550/portfolio-v1/commit/ea988868f44a5fe54290eb1ff8bb4695a2a275e6))
+* not-found page added ([a89c30a](https://github.com/jhonny9550/portfolio-v1/commit/a89c30adb092b112279aeca8b13087d3b7bf7c3a))
+* pop-in animation created ([b6339d1](https://github.com/jhonny9550/portfolio-v1/commit/b6339d12433758dd07e1c98c30c1869a358a7581))
+* sections enhanced with entrance animations ([f75a105](https://github.com/jhonny9550/portfolio-v1/commit/f75a1052f467fae5d593476e70ac01c4e759f4d0))
+
+
+### Bug Fixes
+
+* applying full height attr to base elements ([13b4120](https://github.com/jhonny9550/portfolio-v1/commit/13b4120dcdd53aee061d9d80aae247d836c2b7be))
+* blur and lock scroll when side drawer is open ([f75a105](https://github.com/jhonny9550/portfolio-v1/commit/f75a1052f467fae5d593476e70ac01c4e759f4d0))
+* Button component rel attr ([c8bb048](https://github.com/jhonny9550/portfolio-v1/commit/c8bb048a7ee86d6927e9e37cf1a8f9ab4a75a6ba))
+* drawer button animated ([76d4b76](https://github.com/jhonny9550/portfolio-v1/commit/76d4b760938c17afcd71fa501c516e12421da0ae))
+* featured project image overlay size ([58ca5c2](https://github.com/jhonny9550/portfolio-v1/commit/58ca5c298a978c43240ed6e0267d2ecb8c643736))
+* moving resume.pdf link to env ([726c8ce](https://github.com/jhonny9550/portfolio-v1/commit/726c8ce3daca31ff6df3ee55afc398e5d9c9bb09))
+* project card size ([58ca5c2](https://github.com/jhonny9550/portfolio-v1/commit/58ca5c298a978c43240ed6e0267d2ecb8c643736))
+* use a element fixes anchor link scroll ([460fafd](https://github.com/jhonny9550/portfolio-v1/commit/460fafd7b85861e0c0ca810d4ec1a6ed14c4855c))
+
 ## [1.1.0](https://github.com/jhonny9550/portfolio-v1/compare/v1.0.1...v1.1.0) (2023-06-03)
 
 
