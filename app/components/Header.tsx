@@ -27,6 +27,14 @@ export default function Header() {
     }
   }, [drawerOpen]);
 
+  useEffect(() => {
+    const closeDrawer = setDrawerOpen.bind(null, false);
+    window.addEventListener('closedrawer', closeDrawer);
+    return () => {
+      window.removeEventListener('closedrawer', closeDrawer);
+    };
+  }, []);
+
   useOnClickOutside(drawerWraperRef, setDrawerOpen.bind(null, false));
 
   return (
