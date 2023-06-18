@@ -5,6 +5,11 @@
 
 The first version of my [personal website](https://jfmartinez.dev). It's a simple portfolio website that showcases my projects and skills. It's built with [NextJS](https://nextjs.org/) and [TailwindCSS](https://tailwindcss.com/).
 
+<div align="center" style="margin-bottom: 16px">
+  <img alt="GitHub release (release name instead of tag name)" src="https://img.shields.io/github/v/release/jhonny9550/portfolio-v1?color=rgb(240%2C%20101%2C%2067)">
+  <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/jhonny9550/portfolio-v1/production?label=vercel&logo=vercel&logoColor=white">
+</div>
+
 ![Project Screenshot](public/featured/portfolio.jpg)
 
 ## Installation :wrench:
