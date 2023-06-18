@@ -1,5 +1,4 @@
 import Hero from '@/app/sections/Hero';
-import { RESUME_URL } from '@/app/utils/data.utils';
 import { render, screen } from '@testing-library/react';
 
 describe('Hero section', () => {
@@ -7,11 +6,15 @@ describe('Hero section', () => {
     render(<Hero />);
 
     const title = screen.getByText('Jhonny Martinez.');
-    const greeting = screen.getByText('Hello world! 👋 My name is');
+    const greeting = screen.getByText('Hello world!');
+    const handEmoji = screen.getByText('👋');
+    const name = screen.getByText('My name is');
     const description = screen.getByText('I craft software solutions.');
     const downloadResumeButton = screen.getByText('Download my resume');
 
     expect(title).toBeInTheDocument();
+    expect(handEmoji).toBeInTheDocument();
+    expect(name).toBeInTheDocument();
     expect(greeting).toBeInTheDocument();
     expect(description).toBeInTheDocument();
     expect(downloadResumeButton).toBeInTheDocument();
@@ -22,7 +25,7 @@ describe('Hero section', () => {
 
     const downloadResumeButton = screen.getByText('Download my resume');
 
-    expect(downloadResumeButton).toHaveAttribute('href', RESUME_URL);
+    expect(downloadResumeButton).toHaveAttribute('href', process.env.resumeUrl);
     expect(downloadResumeButton).toHaveAttribute('target', '_blank');
     expect(downloadResumeButton).toHaveAttribute('download');
   });

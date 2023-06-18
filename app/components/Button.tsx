@@ -21,7 +21,7 @@ const Button = ({ color = 'primary', ...props }: PropsWithChildren<ButtonProps>)
   return (
     <Link
       className={clsx([
-        'w-fit flex items-center gap-2.5 px-8 py-[18px]',
+        'w-fit flex items-center gap-2.5 px-8 py-[18px] hover:translate-x-2 transition-transform duration-200 ease-in-out',
         colorClassName,
         props.className,
       ])}

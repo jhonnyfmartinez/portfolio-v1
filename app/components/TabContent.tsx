@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 export type TabContentProps = {
   position: string;
   company: string;
@@ -7,7 +9,14 @@ export type TabContentProps = {
 };
 
 const TabContent = (props: TabContentProps) => (
-  <article hidden={props.hidden}>
+  <article
+    hidden={props.hidden}
+    className={clsx([
+      {
+        'motion-safe:animate-fade-in-bottom': !props.hidden,
+        'sm:motion-safe:animate-fade-in-right': !props.hidden,
+      },
+    ])}>
     <h5>
       {props.position}
       <span className="text-primary ml-2">@ {props.company}</span>
