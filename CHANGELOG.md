@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0](https://github.com/jhonny9550/portfolio-v1/compare/v1.2.1...v1.3.0) (2023-06-18)
+
+
+### Features
+
+* tabs content animations added ([04a1b75](https://github.com/jhonny9550/portfolio-v1/commit/04a1b75cb2ee7ff36e5922fc98d51219a9fa815b)), closes [#68](https://github.com/jhonny9550/portfolio-v1/issues/68)
+* using reduced motion prefs ([04a1b75](https://github.com/jhonny9550/portfolio-v1/commit/04a1b75cb2ee7ff36e5922fc98d51219a9fa815b))
+
 ## [1.2.1](https://github.com/jhonny9550/portfolio-v1/compare/v1.2.0...v1.2.1) (2023-06-17)
 
 
