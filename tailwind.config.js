@@ -31,19 +31,69 @@ module.exports = {
     },
     extend: {
       animation: {
-        'pop-in': 'pop-in 0.6s ease-out 0s 1 normal forwards',
+        'pop-in': 'pop-in 0.5s ease-out 0s 1 normal forwards',
+        'fade-in-right': 'fade-in-right 0.4s ease-out 0s 1 normal forwards',
+        'fade-in-bottom': 'fade-in-bottom 0.4s ease-out 0s 1 normal forwards',
+        wobble: 'wobble 0.9s ease-in-out 0s 10 normal forwards',
       },
       keyframes: {
+        wobble: {
+          from: {
+            transform: 'translate3d(0, 0, 0)',
+          },
+          '15%': {
+            transform: 'translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)',
+          },
+          '30%': {
+            transform: 'translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)',
+          },
+          '45%': {
+            transform: 'translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)',
+          },
+          '60%': {
+            transform: 'translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)',
+          },
+          '75%': {
+            transform: 'translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)',
+          },
+          'to ': {
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
+        'fade-in-right': {
+          from: {
+            opacity: 0,
+            transform: 'translate3d(5%, 0, 0)',
+          },
+          to: {
+            opacity: 1,
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
+        'fade-in-bottom': {
+          from: {
+            opacity: 0,
+            transform: 'translate3d(0, 5%, 0)',
+          },
+          to: {
+            opacity: 1,
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
         'pop-in': {
           '0%': {
             opacity: 0,
-            transform: 'scale(0.8)',
+            transform: 'scale(0.9)',
           },
           '100%': {
             opacity: 1,
             transform: 'scale(1)',
           },
         },
+      },
+      transitionProperty: {
+        top: 'top',
+        left: 'left',
       },
     },
   },

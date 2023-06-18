@@ -14,7 +14,7 @@ const Experience = () => {
   return (
     <section className="section-container sm:px-16 xl:px-[260px]" id="experience">
       <SectionHeading icon={TbDeviceLaptop}>Professional experience</SectionHeading>
-      <div className="flex flex-col gap-8 sm:flex-row">
+      <div className="flex flex-col gap-8 min-h-[520px] sm:flex-row sm:min-h-[400px]">
         <Tabs
           tabs={EXPERIENCE_DATA.map(tab => tab.title)}
           selectedTab={selectedTab}

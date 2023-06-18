@@ -10,7 +10,9 @@ export const withEntranceAnimation =
     const isVisible = useIsVisible(ref, threshold);
 
     return (
-      <section ref={ref} className={clsx(['opacity-0', { 'animate-pop-in': isVisible }])}>
+      <section
+        ref={ref}
+        className={clsx(['motion-safe:opacity-0', { 'motion-safe:animate-pop-in': isVisible }])}>
         <Component {...props} />
       </section>
     );

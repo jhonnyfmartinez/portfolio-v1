@@ -41,10 +41,17 @@ export default function Header() {
     <header className={clsx(['header', { scrolled: scrollDirection === ScrollDirection.down }])}>
       <nav className="w-full flex items-center gap-8 px-8 xl:px-16">
         <Link
-          className="transition-transform max-w-[50px] opacity-0 animate-pop-in animation-delay-[800ms] hover:scale-110"
+          className="max-w-[50px] motion-safe:opacity-0 motion-safe:animate-pop-in motion-safe:animation-delay-[800ms]"
           href="/"
           data-testid="root-link">
-          <Image src="/logo.svg" alt="Vercel Logo" priority height={49} width={69} />
+          <Image
+            className="motion-safe:transition-all hover:scale-110"
+            src="/logo.svg"
+            alt="Vercel Logo"
+            priority
+            height={49}
+            width={69}
+          />
         </Link>
         <NavLinks className="flex-grow justify-end gap-9 hidden sm:flex" />
         <div
@@ -52,7 +59,7 @@ export default function Header() {
           className="flex-grow flex justify-end items-center sm:hidden"
           data-testid="wrapper">
           <button
-            className="text-3xl opacity-0 animate-pop-in animation-delay-[1000ms]"
+            className="text-3xl motion-safe:opacity-0 motion-safe:animate-pop-in motion-safe:animation-delay-[1000ms]"
             onClick={handleToggleDrawer}
             data-testid="toggle-button">
             {drawerOpen ? <TbX data-testname="x" /> : <TbMenu2 data-testname="menu" />}

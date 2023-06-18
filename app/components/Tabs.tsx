@@ -30,7 +30,7 @@ const Tabs = (props: TabsProps) => {
           type="button"
           role="tab"
           className={clsx(
-            'py-1.5 pt-2 small-copy text-center hover:text-primary hover:bg-paper',
+            'py-1.5 pt-2 small-copy text-center hover:text-primary hover:bg-paper motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-in-out',
             {
               'bg-paper text-primary': index === props.selectedTab,
             },
@@ -43,18 +43,25 @@ const Tabs = (props: TabsProps) => {
         </button>
       ))}
       <div
-        className="h-px border border-solid border-primary absolute z-20 sm:hidden"
+        className="
+          h-px border border-solid border-primary absolute z-20 motion-safe:transition-left motion-safe:ease-in-out motion-safe:duration-300
+          sm:hidden
+        "
         style={{ left: indicatorLeft, width: BUTTON_WIDTH }}
       />
       <div
-        className="hidden w-px border border-solid border-primary absolute z-20 right-0 sm:block"
+        className="
+          hidden w-px border border-solid border-primary absolute z-20 right-0 motion-safe:transition-top motion-safe:ease-in-out motion-safe:duration-300
+          sm:block
+        "
         style={{ top: indicatorTop, height: BUTTON_HEIGHT }}
       />
       {ref.current && (
         <>
           <div
             className="
-              h-px border border-solid border-text opacity-20 absolute z-10 sm:hidden
+              h-px border border-solid border-text opacity-20 absolute z-10
+              sm:hidden
             "
             style={{ left: PADDING_SIZE, width: ref.current.scrollWidth - PADDING_SIZE * 1.25 }}
           />

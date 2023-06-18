@@ -3,9 +3,13 @@ import Link from 'next/link';
 
 const Hero = () => (
   <section
-    className="section-container xl:px-[124px] xl:py-28 xl:gap-4 opacity-0 animate-pop-in animation-delay-[1800ms]"
+    className="section-container xl:px-[124px] xl:py-28 xl:gap-4 motion-safe:opacity-0 motion-safe:animate-pop-in motion-safe:animation-delay-[1800ms]"
     data-testid="hero-section">
-    <pre className="text-accent">Hello world! 👋 My name is</pre>
+    <div className="text-accent flex items-center gap-2">
+      <pre>Hello world!</pre>
+      <span className="motion-safe:animate-wobble cursor-grab">👋</span>
+      <pre>My name is</pre>
+    </div>
     <h1 className="text-white hero-text leading-tight">
       Jhonny Martinez.
       <span className="block text-text">I craft software solutions.</span>
