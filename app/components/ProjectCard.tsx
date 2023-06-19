@@ -7,7 +7,7 @@ type ProjectCardProps = Omit<ProjectInterface, 'image'>;
 const ProjectCard = (props: ProjectCardProps) => (
   <article className="bg-paper rounded-lg p-6 drop-shadow-lg flex flex-col gap-4 w-full sm:w-[300px] xl:w-[320px]">
     <div className="flex">
-      <h5 className="flex-grow">{props.name}</h5>
+      <h3 className="flex-grow">{props.name}</h3>
       <TbCode className="text-2xl text-primary sm:text-4xl" />
     </div>
     <p className="flex-grow">{props.description}</p>

@@ -17,10 +17,10 @@ const TabContent = (props: TabContentProps) => (
         'sm:motion-safe:animate-fade-in-right': !props.hidden,
       },
     ])}>
-    <h5>
+    <h3>
       {props.position}
       <span className="text-primary ml-2">@ {props.company}</span>
-    </h5>
+    </h3>
     <p className="small-copy font-mono">{props.period}</p>
     <ul className="bullet-list mt-6">
       {props.items.map((item, index) => (

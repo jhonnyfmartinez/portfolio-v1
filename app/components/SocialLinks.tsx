@@ -13,12 +13,7 @@ const SocialLinks = (props: SocialLinksProps) => {
         const Icon = icon;
         return (
           <li key={index}>
-            <Link
-              href={link}
-              target="_blank"
-              aria-label={label}
-              rel="noreferrer"
-              download={label === 'Download Resume'}>
+            <Link href={link} target="_blank" aria-label={label} rel="noreferrer">
               <Icon className={linkClassName} title={label} />
             </Link>
           </li>
