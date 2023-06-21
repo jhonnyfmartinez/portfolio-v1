@@ -19,7 +19,7 @@ const FeaturedProject = (props: FeaturedProjectProps) => {
         <div className="flex flex-col justify-between gap-2 xl:flex-row xl:items-end">
           <div>
             <span className="font-mono small-copy">{props.type}</span>
-            <h5>{props.name}</h5>
+            <h3>{props.name}</h3>
           </div>
           <ul className="tech-list">
             {props.tech.map((tech, index) => (
