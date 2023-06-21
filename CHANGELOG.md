@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.1](https://github.com/jhonny9550/portfolio-v1/compare/v1.3.0...v1.3.1) (2023-06-21)
+
+
+### Bug Fixes
+
+* avoid render links without href ([e80ce22](https://github.com/jhonny9550/portfolio-v1/commit/e80ce22044ee3932c700514a7a9786985cb19e9d))
+* headings hierarchy fixed ([55eeb85](https://github.com/jhonny9550/portfolio-v1/commit/55eeb856c91da26357c6e525bf71a26d41599645))
+* missing icon links aria-label added ([cd19c6d](https://github.com/jhonny9550/portfolio-v1/commit/cd19c6d5ae7503113f421ade28cba14ba32b2f55))
+* removed unused download link prop ([cd19c6d](https://github.com/jhonny9550/portfolio-v1/commit/cd19c6d5ae7503113f421ade28cba14ba32b2f55))
+* social links animation set to fade-in-right ([51dfcb9](https://github.com/jhonny9550/portfolio-v1/commit/51dfcb92fa04758f2294723a7a0416426fef05da))
+* wave emoji animation added ([51dfcb9](https://github.com/jhonny9550/portfolio-v1/commit/51dfcb92fa04758f2294723a7a0416426fef05da))
+
 ## [1.3.0](https://github.com/jhonny9550/portfolio-v1/compare/v1.2.1...v1.3.0) (2023-06-18)
 
 
