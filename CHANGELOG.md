@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.2](https://github.com/jhonny9550/portfolio-v1/compare/v1.3.1...v1.3.2) (2023-06-23)
+
+
+### Bug Fixes
+
+* About copy ([080cd1a](https://github.com/jhonny9550/portfolio-v1/commit/080cd1a5fd5547e2ebed999f97a148551a8fae21))
+* About section horizontal padding ([080cd1a](https://github.com/jhonny9550/portfolio-v1/commit/080cd1a5fd5547e2ebed999f97a148551a8fae21))
+* aria-label added for mobile menu btn ([8e54e7a](https://github.com/jhonny9550/portfolio-v1/commit/8e54e7a765ce85a2bde8ea8cb471feb1652188e0))
+
 ## [1.3.1](https://github.com/jhonny9550/portfolio-v1/compare/v1.3.0...v1.3.1) (2023-06-21)
 
 
