@@ -7,7 +7,7 @@ import { TbUser } from 'react-icons/tb';
 import { withEntranceAnimation } from '../components/EntranceWrapper';
 
 const About = () => (
-  <div className="section-container" data-testid="about-section" id="about">
+  <div className="section-container xl:px-[220px]" data-testid="about-section" id="about">
     <SectionHeading icon={TbUser}>About me</SectionHeading>
     <div className="flex flex-col items-center gap-20 xl:flex-row">
       <div className="flex flex-col gap-6">
@@ -22,8 +22,8 @@ const About = () => (
           small-businesses all the way to large enterprise corporations.
         </p>
         <p>
-          Currently, I&apos;m looking for a new role, in the meantime I build my online presence,
-          contribute to open source projects and learn Rust programming language.
+          Currently, being part of an amazing company, learning Rust programming language, building
+          my online presence and looking to contribute in open source projects.
         </p>
         <p>Here is my main tech stack:</p>
         <ul className="bullet-list font-mono grid grid-cols-2 gap-y-3.5 gap-x-2 xl:gap-x-14">
@@ -33,11 +33,12 @@ const About = () => (
         </ul>
       </div>
       <Image
-        height={386}
-        width={386}
+        height={250}
+        width={250}
         src="/me.png"
         alt="A picture of me"
-        className="max-w-[250px] xl:max-w-none"
+        className="sm:min-w-[350px]"
+        sizes="(min-width: 640px) 350px"
       />
     </div>
   </div>

@@ -61,7 +61,8 @@ export default function Header() {
           <button
             className="text-3xl motion-safe:opacity-0 motion-safe:animate-pop-in motion-safe:animation-delay-[1000ms]"
             onClick={handleToggleDrawer}
-            data-testid="toggle-button">
+            data-testid="toggle-button"
+            aria-label="Toggle Menu Button">
             {drawerOpen ? <TbX data-testname="x" /> : <TbMenu2 data-testname="menu" />}
           </button>
           <Drawer open={drawerOpen} />
