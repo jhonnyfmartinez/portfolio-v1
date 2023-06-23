@@ -35,7 +35,7 @@ const About = () => (
       <Image
         height={250}
         width={250}
-        src="/me.png"
+        src="/me.webp"
         alt="A picture of me"
         className="sm:min-w-[350px]"
         sizes="(min-width: 640px) 350px"
