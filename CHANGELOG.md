@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.3](https://github.com/jhonny9550/portfolio-v1/compare/v1.3.2...v1.3.3) (2023-06-23)
+
+
+### Bug Fixes
+
+* using webp images ([dc98be2](https://github.com/jhonny9550/portfolio-v1/commit/dc98be2751f0801be2bb208939bc57ccfbe481f9))
+
 ## [1.3.2](https://github.com/jhonny9550/portfolio-v1/compare/v1.3.1...v1.3.2) (2023-06-23)
 
 
