@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.0](https://github.com/jhonny9550/portfolio-v1/compare/v1.3.3...v1.4.0) (2023-06-24)
+
+
+### Features
+
+* vercel analytics added ([f7943ed](https://github.com/jhonny9550/portfolio-v1/commit/f7943ed7867100336f052301a6d0c96e2cea872f))
+
 ## [1.3.3](https://github.com/jhonny9550/portfolio-v1/compare/v1.3.2...v1.3.3) (2023-06-23)
 
 
