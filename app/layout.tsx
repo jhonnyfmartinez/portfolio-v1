@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Arvo, Source_Code_Pro } from 'next/font/google';
 import { PropsWithChildren } from 'react';
 import Footer from './components/Footer';
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
           <SocialLinks className="flex-col py-8 px-5 gap-6" />
         </div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
