@@ -10,7 +10,7 @@ The first version of my [personal website](https://jfmartinez.dev). It's a simpl
   <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/jhonny9550/portfolio-v1/production?label=vercel&logo=vercel&logoColor=white">
 </div>
 
-![Project Screenshot](public/featured/portfolio.jpg)
+![Project Screenshot](public/featured/portfolio.webp)
 
 ## Installation :wrench:
 
