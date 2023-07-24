@@ -48,7 +48,6 @@ export default function Header() {
             className="motion-safe:transition-all hover:scale-110"
             src="/logo.svg"
             alt="Vercel Logo"
-            priority
             height={49}
             width={69}
           />
