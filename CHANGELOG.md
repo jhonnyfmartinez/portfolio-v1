@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.1](https://github.com/jhonny9550/portfolio-v1/compare/v1.4.0...v1.4.1) (2023-07-24)
+
+
+### Bug Fixes
+
+* removing priority flag for header logo ([8e6eefe](https://github.com/jhonny9550/portfolio-v1/commit/8e6eefe466c332e120c74e44f698aedac22b4e66))
+
 ## [1.4.0](https://github.com/jhonny9550/portfolio-v1/compare/v1.3.3...v1.4.0) (2023-06-24)
 
 
