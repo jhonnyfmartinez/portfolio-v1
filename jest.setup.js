@@ -1,4 +1,4 @@
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 
 beforeEach(() => {
   // IntersectionObserver isn't available in test environment
