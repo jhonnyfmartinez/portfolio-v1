@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/jhonnyfmartinez/portfolio-v1/compare/v1.0.0...v1.1.0) (2023-12-06)
+
+
+### Features
+
+* sections enhanced with entrance animations ([f75a105](https://github.com/jhonnyfmartinez/portfolio-v1/commit/f75a1052f467fae5d593476e70ac01c4e759f4d0))
+* tabs content animations added ([04a1b75](https://github.com/jhonnyfmartinez/portfolio-v1/commit/04a1b75cb2ee7ff36e5922fc98d51219a9fa815b)), closes [#68](https://github.com/jhonnyfmartinez/portfolio-v1/issues/68)
+* using reduced motion prefs ([04a1b75](https://github.com/jhonnyfmartinez/portfolio-v1/commit/04a1b75cb2ee7ff36e5922fc98d51219a9fa815b))
+* vercel analytics added ([f7943ed](https://github.com/jhonnyfmartinez/portfolio-v1/commit/f7943ed7867100336f052301a6d0c96e2cea872f))
+
+
+### Bug Fixes
+
+* About copy ([080cd1a](https://github.com/jhonnyfmartinez/portfolio-v1/commit/080cd1a5fd5547e2ebed999f97a148551a8fae21))
+* About section horizontal padding ([080cd1a](https://github.com/jhonnyfmartinez/portfolio-v1/commit/080cd1a5fd5547e2ebed999f97a148551a8fae21))
+* aria-label added for mobile menu btn ([8e54e7a](https://github.com/jhonnyfmartinez/portfolio-v1/commit/8e54e7a765ce85a2bde8ea8cb471feb1652188e0))
+* avoid render links without href ([e80ce22](https://github.com/jhonnyfmartinez/portfolio-v1/commit/e80ce22044ee3932c700514a7a9786985cb19e9d))
+* blur and lock scroll when side drawer is open ([f75a105](https://github.com/jhonnyfmartinez/portfolio-v1/commit/f75a1052f467fae5d593476e70ac01c4e759f4d0))
+* closing drawer on sidebar link click ([082e606](https://github.com/jhonnyfmartinez/portfolio-v1/commit/082e606ff1f3cac46bb3b72667f2890d4f9c122d)), closes [#63](https://github.com/jhonnyfmartinez/portfolio-v1/issues/63)
+* delete vercel invalid config ([5db5e25](https://github.com/jhonnyfmartinez/portfolio-v1/commit/5db5e253091626922ba7de8572fe67aca16b4c60))
+* drawer button animated ([76d4b76](https://github.com/jhonnyfmartinez/portfolio-v1/commit/76d4b760938c17afcd71fa501c516e12421da0ae))
+* headings hierarchy fixed ([55eeb85](https://github.com/jhonnyfmartinez/portfolio-v1/commit/55eeb856c91da26357c6e525bf71a26d41599645))
+* jest-dom breaking change fixed ([071cbe4](https://github.com/jhonnyfmartinez/portfolio-v1/commit/071cbe44714e76e774cc16c4cb4f80a4cba3949a))
+* missing icon links aria-label added ([cd19c6d](https://github.com/jhonnyfmartinez/portfolio-v1/commit/cd19c6d5ae7503113f421ade28cba14ba32b2f55))
+* removed unused download link prop ([cd19c6d](https://github.com/jhonnyfmartinez/portfolio-v1/commit/cd19c6d5ae7503113f421ade28cba14ba32b2f55))
+* removing priority flag for header logo ([8e6eefe](https://github.com/jhonnyfmartinez/portfolio-v1/commit/8e6eefe466c332e120c74e44f698aedac22b4e66))
+* social links animation set to fade-in-right ([51dfcb9](https://github.com/jhonnyfmartinez/portfolio-v1/commit/51dfcb92fa04758f2294723a7a0416426fef05da))
+* using webp images ([dc98be2](https://github.com/jhonnyfmartinez/portfolio-v1/commit/dc98be2751f0801be2bb208939bc57ccfbe481f9))
+* wave emoji animation added ([51dfcb9](https://github.com/jhonnyfmartinez/portfolio-v1/commit/51dfcb92fa04758f2294723a7a0416426fef05da))
+
 ## 1.0.0 (2023-12-05)
 
 
