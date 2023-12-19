@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.2](https://github.com/jhonnyfmartinez/portfolio-v1/compare/v1.4.1...v1.4.2) (2023-12-19)
+
+
+### Bug Fixes
+
+* jest-dom breaking change fixed ([071cbe4](https://github.com/jhonnyfmartinez/portfolio-v1/commit/071cbe44714e76e774cc16c4cb4f80a4cba3949a))
+
 ## [1.4.1](https://github.com/jhonnyfmartinez/portfolio-v1/compare/v1.4.0...v1.4.1) (2023-12-13)
 
 
