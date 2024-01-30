@@ -44,7 +44,7 @@
     "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.3.0",
+    "@testing-library/jest-dom": "^6.4.0",
     "@testing-library/react": "^14.1.2",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.0.6",
