@@ -25,7 +25,20 @@
     "type": "git",
     "url": "https://github.com/jhonny9550/portfolio-v1"
   },
-  "browserslist": "last 2 versions",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "Chrome 118",
+      "last 1 chrome version",
+      "last 1 edge version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@types/node": "20.11.19",
     "@types/react": "18.2.55",
@@ -35,7 +48,7 @@
     "clsx": "^2.1.0",
     "eslint": "8.56.0",
     "eslint-config-next": "14.1.0",
-    "next": "14.0.4",
+    "next": "14.1.0",
     "postcss": "8.4.35",
     "react": "18.2.0",
     "react-dom": "18.2.0",
