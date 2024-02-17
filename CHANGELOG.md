@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.3](https://github.com/jhonnyfmartinez/portfolio-v1/compare/v1.4.2...v1.4.3) (2024-02-17)
+
+
+### Bug Fixes
+
+* update browserslist config ([673b395](https://github.com/jhonnyfmartinez/portfolio-v1/commit/673b3957b2a6c4ef32ddf239f025fe11df16add6))
+
 ## [1.4.2](https://github.com/jhonnyfmartinez/portfolio-v1/compare/v1.4.1...v1.4.2) (2023-12-19)
 
 
