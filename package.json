@@ -40,8 +40,8 @@
     ]
   },
   "dependencies": {
-    "@types/node": "20.11.22",
     "@types/react": "18.2.61",
+    "@types/node": "20.11.24",
     "@types/react-dom": "18.2.19",
     "@vercel/analytics": "^1.2.2",
     "autoprefixer": "10.4.17",
