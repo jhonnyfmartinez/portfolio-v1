@@ -12,7 +12,7 @@ import NavLinks from './NavLinks';
 
 export default function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const drawerWraperRef = useRef(null);
+  const drawerWraperRef = useRef<HTMLDivElement | null>(null);
   const scrollDirection = useScrollDirection();
 
   const handleToggleDrawer = useCallback(() => {

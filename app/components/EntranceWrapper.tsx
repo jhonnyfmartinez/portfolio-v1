@@ -6,7 +6,7 @@ import useIsVisible from '../hooks/useIsVisible';
 export const withEntranceAnimation =
   (Component: FC<any>, threshold = 0.5) =>
   (props: any) => {
-    const ref = useRef<HTMLElement>(null);
+    const ref = useRef<HTMLElement | null>(null);
     const isVisible = useIsVisible(ref, threshold);
 
     return (

@@ -1,8 +1,9 @@
 import { PropsWithChildren, useCallback } from 'react';
+import { IconType } from 'react-icons';
 import { TbDeviceLaptop, TbFolder, TbMail, TbUser } from 'react-icons/tb';
 
 type NavLinkProps = {
-  icon: (props: { className: string }) => React.ReactElement;
+  icon: IconType;
   href: string;
   className?: string;
 };

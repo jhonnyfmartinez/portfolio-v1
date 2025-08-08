@@ -14,7 +14,7 @@ type Handler = (event: PossibleEvent) => void;
 
 const events: HandledEvents = [MOUSEDOWN, TOUCHSTART];
 
-export default function useOnClickOutside(ref: RefObject<HTMLElement>, handler: Handler) {
+export default function useOnClickOutside(ref: RefObject<HTMLElement | null>, handler: Handler) {
   useEffect(() => {
     const listener = (event: PossibleEvent) => {
       // Do nothing if clicking ref's element or descendent elements

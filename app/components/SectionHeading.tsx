@@ -1,7 +1,8 @@
 import clsx from 'clsx';
+import { IconType } from 'react-icons';
 
 type SectionHeadingProps = {
-  icon: (props: { className?: string }) => React.ReactElement;
+  icon: IconType;
   centered?: boolean;
 };
 

@@ -1,11 +1,11 @@
 // istanbul ignore file
 import { useEffect, useState } from 'react';
 
-export default function useIsVisible(ref: React.RefObject<Element>, threshold = 0.5) {
+export default function useIsVisible(ref: React.RefObject<HTMLElement | null>, threshold = 0.5) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const el = ref.current as Element;
+    const el = ref?.current as Element;
     if (!el) {
       return;
     }
