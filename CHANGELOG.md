@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.0 (2025-09-19)
+
+
+### Features
+
+* update Tailwind to version 4 ([04c9626](https://github.com/jhonnyfmartinez/portfolio-v1/commit/04c96266a93bd7e8de19086dbbe07cab78656782))
+
 ## [1.0.2](https://github.com/jhonnyfmartinez/portfolio-v1/compare/v1.0.1...v1.0.2) (2024-08-15)
 
 
