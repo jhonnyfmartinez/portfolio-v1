@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Colors - defined in hex format */
+  --color-*: initial;
+  --color-primary: #f06543;
+  --color-accent: #f09d51;
+  --color-text: #b3b3b3;
+  --color-paper: #2c2e3e;
+  --color-background: #1f202b;
+  --color-headings: #dedede;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  /* Font families */
+  --font-family-sans: var(--font-arvo), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-mono: var(--font-scp), ui-monospace, SFMono-Regular, 'SF Mono', Consolas,
+    'Liberation Mono', Menlo, monospace;
+
+  /* Container */
+  --container-center: true;
+
+  /* Animations */
+  --animate-pop-in: pop-in 0.5s ease-out 0s 1 normal forwards;
+  --animate-fade-in-right: fade-in-right 0.4s ease-out 0s 1 normal forwards;
+  --animate-fade-in-bottom: fade-in-bottom 0.4s ease-out 0s 1 normal forwards;
+  --animate-wobble: wobble 0.9s ease-in-out 0s 10 normal forwards;
+
+  /* Transition properties */
+  --transition-property-top: top;
+  --transition-property-left: left;
+  /* Default transition */
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  /* Header height */
+  --header-height: 5rem;
+  --header-scroll-height: 3.5rem;
+}
+
+/* Keyframes for animations */
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(5%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

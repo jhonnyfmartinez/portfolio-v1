@@ -1,23 +1,20 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import './theme.css';
 
 /* Base */
-@import 'base/variables.css';
-@import 'base/colors.css';
-@import 'base/typography.css';
+@import './base/colors.css';
+@import './base/typography.css';
 
 /* Components */
-@import 'components/header.css';
-@import 'components/drawer.css';
-@import 'components/list.css';
-@import 'components/tabs.css';
-@import 'components/floating-links.css';
+@import './components/header.css';
+@import './components/drawer.css';
+@import './components/list.css';
+@import './components/tabs.css';
+@import './components/floating-links.css';
 
 /* Utilities */
-@import 'utilities/containers.css';
-@import 'utilities/flex.css';
-@import 'utilities/scroll.css';
+@import './utilities/containers.css';
+@import './utilities/flex.css';
+@import './utilities/scroll.css';
 
 @layer base {
   html,
