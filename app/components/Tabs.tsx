@@ -30,7 +30,7 @@ const Tabs = (props: TabsProps) => {
           type="button"
           role="tab"
           className={clsx(
-            'py-1.5 pt-2 small-copy text-center hover:text-primary hover:bg-paper motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-in-out',
+            'py-1.5 pt-2 small-copy text-center hover:cursor-pointer hover:text-primary hover:bg-paper motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-in-out',
             {
               'bg-paper text-primary': index === props.selectedTab,
             },

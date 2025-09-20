@@ -16,13 +16,10 @@
   --color-current: currentColor;
 
   /* Font families */
-  --font-family-sans: var(--font-arvo), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+  --font-sans: var(--font-arvo), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-family-mono: var(--font-scp), ui-monospace, SFMono-Regular, 'SF Mono', Consolas,
-    'Liberation Mono', Menlo, monospace;
-
-  /* Container */
-  --container-center: true;
+  --font-mono: var(--font-scp), ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono',
+    Menlo, monospace;
 
   /* Animations */
   --animate-pop-in: pop-in 0.5s ease-out 0s 1 normal forwards;
