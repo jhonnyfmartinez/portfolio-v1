@@ -43,7 +43,7 @@
     "@types/react": "19.2.2",
     "@types/node": "24.9.2",
     "@types/react-dom": "19.2.2",
-    "@tailwindcss/postcss": "^4.1.16",
+    "@tailwindcss/postcss": "^4.1.17",
     "@vercel/analytics": "^1.5.0",
     "clsx": "^2.1.1",
     "eslint": "9.38.0",
