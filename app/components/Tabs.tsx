@@ -13,14 +13,18 @@ type TabsProps = {
 };
 
 const Tabs = (props: TabsProps) => {
-  const [indicatorLeft, setIndicatorLeft] = useState(0);
-  const [indicatorTop, setIndicatorTop] = useState(0);
+  const [scrollWidth, setScrollWidth] = useState(0);
+
   const ref = useRef<HTMLDivElement>(null);
 
+  const indicatorLeft = (props.selectedTab ?? 0) * BUTTON_WIDTH + PADDING_SIZE;
+  const indicatorTop = (props.selectedTab ?? 0) * BUTTON_HEIGHT;
+
   useEffect(() => {
-    setIndicatorLeft(props.selectedTab * BUTTON_WIDTH + PADDING_SIZE);
-    setIndicatorTop(props.selectedTab * BUTTON_HEIGHT);
-  }, [props.selectedTab]);
+    if (ref.current) {
+      setScrollWidth(ref.current.scrollWidth);
+    }
+  }, [props.tabs]);
 
   return (
     <div className="tabs" ref={ref} role="tablist" aria-label="Experience Tabs">
@@ -56,23 +60,21 @@ const Tabs = (props: TabsProps) => {
         "
         style={{ top: indicatorTop, height: BUTTON_HEIGHT }}
       />
-      {ref.current && (
-        <>
-          <div
-            className="
+      <>
+        <div
+          className="
               h-px border border-solid border-text opacity-20 absolute z-10
               sm:hidden
             "
-            style={{ left: PADDING_SIZE, width: ref.current.scrollWidth - PADDING_SIZE * 1.25 }}
-          />
-          <div
-            className="
+          style={{ left: PADDING_SIZE, width: scrollWidth - PADDING_SIZE * 1.25 }}
+        />
+        <div
+          className="
               hidden w-px border border-solid border-text opacity-20 absolute z-10 right-0 sm:block
             "
-            style={{ top: 0, height: BUTTON_HEIGHT * props.tabs.length }}
-          />
-        </>
-      )}
+          style={{ top: 0, height: BUTTON_HEIGHT * props.tabs.length }}
+        />
+      </>
     </div>
   );
 };
